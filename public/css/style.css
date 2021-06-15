@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital@1&display=swap');
+
+body{
+    background-color:#92b74b;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+p{
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: red;
+    font-size: small;
+}
+
+h3{
+    color: #92b74b;
+}
+
+label{
+    color: #92b74b;
+}
+
+.content {
+    /* margin: 8%; */
+    background-color:red;
+    padding: 1rem 1rem 1rem 1rem;
+    box-shadow: 0 0 5px 5px rgb(0 0 0 / 5%);
+}
+
+.signin-text{   
+    font-style: normal;
+    font-weight: 600 !important;
+}
+
+.form-control{
+    display: block;
+    width: 80%;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    border-color: #00ac96 !important;
+    border-style: solid !important;
+    border-width: 0 0 1px 0 !important;
+    padding: 0px !important;
+    color: #495057;
+    height: auto;
+    border-radius: 0;
+    background-color: #e6ebe9;
+    background-clip: padding-box;
+}
+
+.form-control:focus{
+    color:#495057;
+    background-color: #e6ebe9;
+    border-color: #e6ebe9;
+    outline: 0;
+    box-shadow: none;
+}
+
+.btn-class{
+    border-color:#92b74b;
+    color:#92b74b;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.btn-class:hover{
+     background-color:#92b74b;
+     color: #e6ebe9;
+}
+
+a{
+    color:#92b74b;
+}
+
+a:hover{
+    color:#92b74b;
+    background-color: #e6ebe9;
+}
+
+.alert {
+    position: relative;
+    padding: .72rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    width: 80%;
+}
+
+.alert-success {
+    color: #e6ebe9;
+    background-color: #92b74b;
+    /* border-color: #c3e6cb; */
+}

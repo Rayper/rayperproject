@@ -1,0 +1,203 @@
+body {
+  background-color: #ffffff;
+  font-family: 'Source Sans Pro', sans-serif;
+  scroll-behavior: smooth;
+}
+
+.navbar .navbar-nav .nav-link {
+  font-family: 'Merriweather', serif;
+  color: #92B74B;
+  float: left;
+  display: block;
+  padding: 5px 5px;
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  color: #92B74B;
+  font-family: 'Merriweather', serif;
+  border-bottom: 3px solid #92B74B;
+}
+
+.navbar .navbar-nav .nav-link.active {
+  color: #92B74B;
+  font-family: 'Merriweather', serif;
+  font-weight: bolder;
+  border-bottom: 3px solid #92B74B;
+}
+
+.btn-secondary {
+  background-color: #92B74B;
+  color: #ffffff;
+}
+
+.btn-secondary:hover {
+  background-color: #9FD438;
+  color: #ffffff;
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active {
+  background-color: #92B74B;
+  color: #ffffff;
+}
+
+.show > .btn-secondary.dropdown-toggle {
+  background-color: #92B74B;
+  color: #ffffff;
+}
+
+.secondary.dropdown-toggle {
+  color: #fff;
+  background-color: #9FD438;
+}
+
+.navbar-brand img {
+  max-height: 40px;
+}
+
+header {
+  padding: 40px 409px 40px 40px;
+  background-color: #92B74B;
+  color: #ffffff;
+}
+
+h1 {
+  font-family: 'Merriweather', serif;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 30px;
+}
+
+.section-header-tpu .container .row .custom-select {
+  max-width: 150px;
+  margin-top: 40px;
+  margin-left: 20px;
+}
+
+.section-header-tpu .container .row .form-control {
+  max-width: 250px;
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+.section-header-tpu .container .row .btn-search {
+  margin-top: 40px;
+  color: #ffffff;
+  background-color: #92B74B;
+}
+
+.section-header-tpu .container .row .contoh {
+  background-color: #92B74B;
+  color: #92B74B;
+}
+
+.section-card-tpu .section-card-kober .card {
+  background-color: #EEF3EF;
+  border-radius: 0px;
+  border-style: none;
+  -webkit-box-shadow: 8px 8px 8px #ddcdcd;
+          box-shadow: 8px 8px 8px #ddcdcd;
+}
+
+.section-card-tpu .section-card-kober .card:hover {
+  text-shadow: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  z-index: 2;
+}
+
+.section-card-tpu .section-card-kober .card .card-img-top {
+  height: 250px;
+}
+
+.section-card-tpu .section-card-kober .card .card-body-exist {
+  font-size: 15px;
+  height: 400px;
+}
+
+.section-card-tpu .section-card-kober .card .card-body-exist .btn-full {
+  color: #ffffff;
+  font-size: 15px;
+  background-color: #92B74B;
+}
+
+.section-card-tpu .section-card-kober .card .card-body-exist .card-ket {
+  font-size: 15px;
+  text-align: justify;
+}
+
+.section-card-tpu .section-card-kober .card .card-body-covid {
+  font-size: 15px;
+}
+
+.section-card-tpu .section-card-kober .card .card-body-covid .btn-order {
+  color: #ffffff;
+  font-size: 15px;
+  background-color: #92B74B;
+}
+
+.section-card-tpu .section-card-kober .card .card-body-covid {
+  font-size: 15px;
+}
+
+.section-card-tpu .section-card-kober .card .card-body-covid .btn-order {
+  color: #ffffff;
+  font-size: 15px;
+  background-color: #92B74B;
+}
+
+.section-card-tpu .section-card-kober .card .card-body-new {
+  font-size: 15px;
+}
+
+.section-card-tpu .section-card-kober .card .card-body-new .btn-blok {
+  color: #ffffff;
+  font-size: 15px;
+  background-color: #92B74B;
+}
+
+.page-item.active .page-link {
+  z-index: 3;
+  color: #fff;
+  background-color: #92B74B;
+  border-color: #92B74B;
+}
+
+.section-footer {
+  background-color: #92B74B;
+}
+
+.section-footer .container .row .heading-contact {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.section-footer .container .row .list-unstyled {
+  color: #ffffff;
+}
+
+.section-footer .container .row .heading-feedback {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.section-footer .container .row .btn-feedback {
+  color: #ffffff;
+  border-color: #ffffff;
+  border-radius: 9px;
+}
+
+.section-footer .container .row .btn-feedback:hover {
+  background-color: #9FD438;
+}
+
+.section-footer .container .row .col-copyright {
+  color: #ffffff;
+}
+/*# sourceMappingURL=Findtpu.css.map */
