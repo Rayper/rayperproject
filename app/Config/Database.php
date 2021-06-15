@@ -23,6 +23,7 @@ class Database extends Config
 	 *
 	 * @var string
 	 */
+	
 	public $defaultGroup = 'default';
 
 	/**
@@ -30,6 +31,7 @@ class Database extends Config
 	 *
 	 * @var array
 	 */
+	
 	public $default = [
 		'DSN'      => '',
 		'hostname' => 'ec2-35-174-118-71.compute-1.amazonaws.com',
