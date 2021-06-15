@@ -58,10 +58,10 @@ class Database extends Config
 	 */
 	public $tests = [
 		'DSN'      => '',
-		'hostname' => '127.0.0.1',
-		'username' => '',
-		'password' => '',
-		'database' => ':memory:',
+		'hostname' => 'ec2-52-21-252-142.compute-1.amazonaws.com',
+		'username' => 'cbixzjdkuaewlj',
+		'password' => '08967e3ece44a04f8e6d7e9adf16f7172c00987528499f2b949d767e110bbc76',
+		'database' => 'd5u59mf2udq1ih',
 		'DBDriver' => 'SQLite3',
 		'DBPrefix' => 'db_',  // Needed to ensure we're working correctly with prefixes live. DO NOT REMOVE FOR CI DEVS
 		'pConnect' => false,
@@ -73,7 +73,7 @@ class Database extends Config
 		'compress' => false,
 		'strictOn' => false,
 		'failover' => [],
-		'port'     => 3306,
+		'port'     => 5432,
 	];
 
 	//--------------------------------------------------------------------
