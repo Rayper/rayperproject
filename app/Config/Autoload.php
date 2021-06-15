@@ -17,6 +17,7 @@ use CodeIgniter\Config\AutoloadConfig;
  */
 class Autoload extends AutoloadConfig
 {
+	
 	/**
 	 * -------------------------------------------------------------------
 	 * Namespaces
@@ -43,6 +44,8 @@ class Autoload extends AutoloadConfig
 		APP_NAMESPACE => APPPATH, // For custom app namespace
 		'Config'      => APPPATH . 'Config',
 	];
+
+	// $autoload['helper'] = array('url');
 
 	/**
 	 * -------------------------------------------------------------------
