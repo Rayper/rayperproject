@@ -32,10 +32,10 @@ class Database extends Config
 	 */
 	public $default = [
 		'DSN'      => '',
-		'hostname' => 'localhost',
-		'username' => 'root',
-		'password' => '',
-		'database' => 'testinput',
+		'hostname' => 'ec2-35-174-118-71.compute-1.amazonaws.com',
+		'username' => 'xshbkinrpwggkx',
+		'password' => '8f9a50b34b10f3c54c6314b55e0740dd9c090fdd2c6ae802f48811c947231e2c',
+		'database' => 'dae9o8icntff42',
 		'DBDriver' => 'MySQLi',
 		'DBPrefix' => '',
 		'pConnect' => false,
@@ -47,7 +47,7 @@ class Database extends Config
 		'compress' => false,
 		'strictOn' => false,
 		'failover' => [],
-		'port'     => 3306,
+		'port'     => 5432,
 	];
 
 	/**
@@ -58,11 +58,11 @@ class Database extends Config
 	 */
 	public $tests = [
 		'DSN'      => '',
-		'hostname' => 'ec2-52-21-252-142.compute-1.amazonaws.com',
-		'username' => 'cbixzjdkuaewlj',
-		'password' => '08967e3ece44a04f8e6d7e9adf16f7172c00987528499f2b949d767e110bbc76',
-		'database' => 'd5u59mf2udq1ih',
-		'DBDriver' => 'SQLite3',
+		'hostname' => 'ec2-35-174-118-71.compute-1.amazonaws.com',
+		'username' => 'xshbkinrpwggkx',
+		'password' => '8f9a50b34b10f3c54c6314b55e0740dd9c090fdd2c6ae802f48811c947231e2c',
+		'database' => 'dae9o8icntff42',
+		'DBDriver' => 'MySQLi',
 		'DBPrefix' => 'db_',  // Needed to ensure we're working correctly with prefixes live. DO NOT REMOVE FOR CI DEVS
 		'pConnect' => false,
 		'DBDebug'  => (ENVIRONMENT !== 'production'),
