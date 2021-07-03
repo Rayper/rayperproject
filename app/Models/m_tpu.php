@@ -10,14 +10,35 @@ class m_tpu extends Model
     protected $allowedFields = ['tpu_id', 'NamaTPU', 'AlamatTPU', 'Kategori_id ', 'Thumbnail', 'Unit', 'Contact', 'Link'];
 
 
-    public function search($keyword)
-    {
-        $builder = $this->table('tpu');
-        $builder->like('NamaTPU', $keyword);
-        $builder->orLike('nama', $keyword);
-        $builder->orLike('unit', $keyword);
-        return $builder;
-    }
+    // public function search($keyword)
+    // {
+    //     $builder = $this->table('tpu');
+    //     $builder->like('NamaTPU', $keyword);
+    //     // $builder->orLike('nama', $keyword);
+    //     $builder->orLike('unit', $keyword);
+    //     $builder->Where(['tpu.Kategori_id' => 1]);
+    //     return $builder;
+    // }
+
+    // public function search2($keyword)
+    // {
+    //     $builder = $this->table('tpu');
+    //     $builder->like('NamaTPU', $keyword);
+    //     // $builder->orLike('nama', $keyword);
+    //     $builder->orLike('unit', $keyword);
+    //     $builder->Where(['tpu.Kategori_id' => 2]);
+    //     return $builder;
+    // }
+
+    // public function search3($keyword)
+    // {
+    //     $builder = $this->table('tpu');
+    //     $builder->like('NamaTPU', $keyword);
+    //     // $builder->orLike('nama', $keyword);
+    //     $builder->orLike('unit', $keyword);
+    //     $builder->Where(['tpu.Kategori_id' => 3]);
+    //     return $builder;
+    // }
 
     public function getProduct($tpu_id = false)
     {
@@ -43,6 +64,7 @@ class m_tpu extends Model
         ->where(['tpu_detail.tpu_id' => $tpu_id])
         ->get()->getResultArray();
     }
+
 }
 
    

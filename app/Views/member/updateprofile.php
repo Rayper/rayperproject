@@ -4,73 +4,121 @@
 <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
-    <title><?= $title; ?></title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="<?= base_url('css/Auth.css'); ?>">
+    <title>Update Profile</title>
+    <link rel="shortcut icon" href="/img/Favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="<?= base_url('/css/Auth.css'); ?>">
 </head>
 <body>
 
-    <div class="container">
-        <div class="row content">
-            <div class="col-md-6 mb-3">
-                <img src="/img/bunga.png" alt="image" class="img-fluid">
-                <img src="/img/logo.png" alt="image" class="img">
-            </div>
-            <div class="col-md-6">
-                <br>
-                <h3 class="signin-text mb-3">Edit Profil</h3>
-                <br>
-                    <form method="post" action="<?= site_url('Auth/save') ?>">
+<section class="form-login">
+        <div class="container">
+            <div class="row no-gutters">
+                <div class="col-lg-6">
+                    <img src="/img/Login Image.jpg" alt="image" class="img-fluid">
+                </div>
+                <div class="col-lg-6 px-5 pt-5 justify-content-center">
+                    <form method="post" action="<?= site_url('Member/updateprofile') ?>">
                     <?= csrf_field();?>
-
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" name="email" class="form-control <?= ($validation->hasError('email')) ? 'is-invalid' : '' ; ?>" value="<?= old('email'); ?>">
+                        <div class="form-row justify-content-center">
+                            <div class="col-lg-8">
+                                <a href="/Home">
+                                    <img src="/img//Logo Kober V1.png" class="img-logo pl-4" alt="Logo KOBER">
+                                </a>
+                            </div>
                         </div>
+                        
+                        <div class="form-row justify-content-center mx-2">
+                            <div class="col-lg-10">
+                                <h1>Silahkan Ubah Data Profil Anda!</h1>
+                            </div>
+                        </div>  
+                        <br>
+                        <div class="form-row justify-content-center">
+                            <div class="col-lg-8">
+                            <input type="text" name="fullname" placeholder="Nama Pengguna" class="form-control mx-3 mb-2 <?= ($validation->hasError('fullname')) ? 'is-invalid' : '' ; ?>" value="<?= session()->get('fullname'); ?>" readonly>
+                            </div>
+                        </div>
+
+                        <p>
+                            <?= $validation->getError('fullname'); ?>
+                        </p>
+
+                        <div class="form-row justify-content-center">
+                            <div class="col-lg-8">
+                            <input type="email" name="email" placeholder="Email" class="form-control mx-3 mb-2" <?= ($validation->hasError('email')) ? 'is-invalid' : '' ; ?>" value="<?= old('email'); ?>">
+                            </div>
+                        </div>
+
                         <p>
                             <?= $validation->getError('email'); ?>
                         </p>
-                            
-                        
-                        <div class="form-group">
-                        <label for="password">Nama Panjang</label>
-                            <input type="text" name="fullname" class="form-control <?= ($validation->hasError('fullname')) ? 'is-invalid' : '' ; ?>" value="<?= session()->get('fullname'); ?>" readonly>
+
+                        <div class="form-row justify-content-center">
+                            <div class="col-lg-8">
+                            <input type="text" name="phonenumber" placeholder="Nomor Handphone" class="form-control mx-3 mb-2<?= ($validation->hasError('phonenumber')) ? 'is-invalid' : '' ; ?> " value="<?= old('phonenumber'); ?>" >
+                            </div>
                         </div>
 
-                        <div class="form-group">
-                        <label for="password">Nomor Handphone</label>
-                            <input type="text" name="phonenumber" class="form-control <?= ($validation->hasError('phonenumber')) ? 'is-invalid' : '' ; ?> " value="<?= old('phonenumber'); ?>" >
-                        </div>
                         <p>
                             <?= $validation->getError('phonenumber'); ?>
                         </p>
 
-                        <div class="form-group">
-                        <label for="password">Kata Sandi</label>
-                            <input type="password" name="password" class="form-control <?= ($validation->hasError('password')) ? 'is-invalid' : '' ; ?>">
+                        <div class="form-row justify-content-center">
+                            <div class="col-lg-8">
+                            <input type="password" name="password" placeholder="Kata Sandi" class="form-control  mx-3 mb-2<?= ($validation->hasError('password')) ? 'is-invalid' : '' ; ?>">
+                            </div>
                         </div>
+
                         <p>
-                            <?= $validation->getError('password'); ?>
+                            <?= $validation->getError('phonenumber'); ?>
                         </p>
 
-                        <div class="form-group">
-                        <label for="password">Ulangi kata sandi</label>
-                            <input type="password" name="confirmpw" class="form-control <?= ($validation->hasError('confirmpw')) ? 'is-invalid' : '' ; ?>">
+                        <div class="form-row justify-content-center">
+                            <div class="col-lg-8">
+                            <input type="password" name="confirmpw" placeholder="Konfirmasi Kata Sandi" class="form-control  mx-3 mb-2<?= ($validation->hasError('confirmpw')) ? 'is-invalid' : '' ; ?>">
+                            </div>
                         </div>
+
                         <p>
-                            <?= $validation->getError('confirmpw'); ?>
+                            <?= $validation->getError('phonenumber'); ?>
                         </p>
-                     
-                        <button type="submit" class="btn btn-class">Update Profil</button>
-                        <br>
+
+                        <div class="form-row justify-content-center">
+                            <div class="col-lg-8">
+                                <button type="submit" class="btn btn-register mx-3 my-2" onClick="return sukses()">Daftar</button>
+                            </div>
+                        </div>
                     </form>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
+
+	<script>
+	function sukses() {
+		Swal.fire({
+        icon: 'success',
+        title: 'Berhasil',
+        text: 'Update Profil telah berhasil',
+        confirmButtonColor: '#92b74b',
+        showConfirmButton: true,
+    });
+    setTimeout(function (){
+       window.location.href = "home"; 
+    }, 2000);
+	}
+    </script>
 
    
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-   
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
 </body>
 </html>
 

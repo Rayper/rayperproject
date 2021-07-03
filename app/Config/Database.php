@@ -23,7 +23,6 @@ class Database extends Config
 	 *
 	 * @var string
 	 */
-	
 	public $defaultGroup = 'default';
 
 	/**
@@ -31,13 +30,12 @@ class Database extends Config
 	 *
 	 * @var array
 	 */
-	
 	public $default = [
 		'DSN'      => '',
-		'hostname' => 'ec2-35-174-118-71.compute-1.amazonaws.com',
-		'username' => 'xshbkinrpwggkx',
-		'password' => '8f9a50b34b10f3c54c6314b55e0740dd9c090fdd2c6ae802f48811c947231e2c',
-		'database' => 'dae9o8icntff42',
+		'hostname' => 'localhost',
+		'username' => 'root',
+		'password' => '',
+		'database' => 'testinput',
 		'DBDriver' => 'MySQLi',
 		'DBPrefix' => '',
 		'pConnect' => false,
@@ -49,7 +47,7 @@ class Database extends Config
 		'compress' => false,
 		'strictOn' => false,
 		'failover' => [],
-		'port'     => 5432,
+		'port'     => 3306,
 	];
 
 	/**

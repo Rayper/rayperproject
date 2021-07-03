@@ -24,7 +24,6 @@ $routes->setTranslateURIDashes(false);
 $routes->set404Override();
 $routes->setAutoRoute(true);
 
-
 /*
  * --------------------------------------------------------------------
  * Route Definitions
@@ -38,9 +37,8 @@ $routes->get('login', 'Auth::login');
 $routes->get('logout', 'Auth::logout');
 $routes->get('register', 'Auth::register');
 $routes->post('/login/cekpassword', 'Auth::process');
-$routes->get('/member/pemesananmakambaru(:segment)', 'Member::pemesananmakambaru/$1');
-$routes->get('/member/pemesanancovid(:segment)', 'Member::pemesananmakambaru/$1');
-$routes->get('/member/pemesanantumpangtindih(:segment)', 'Member::pemesananmakambaru/$1');
+// $routes->get('/member/pemesananmakam(:any)', 'Member::pemesananmakam/$1');
+
 
 /*
  * --------------------------------------------------------------------

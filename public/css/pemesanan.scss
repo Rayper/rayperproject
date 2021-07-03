@@ -9,7 +9,12 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
     color: #92B74B;
   }
-  
+
+  p{
+    font-size: small;
+      color: red;
+      margin-left: 200px;
+  }
 //Navbar
 .navbar{
   .navbar-nav{
@@ -26,6 +31,8 @@ body {
       }
   }
   
+
+
   .btn-login{
     background-color: #92B74B;
     font-family: 'Merriweather', serif;
@@ -156,7 +163,7 @@ body {
 //footer
 .section-footer {
   background-color: #92B74B;
-
+  
   .container .row {
     .heading-contact {
       color: #ffffff;
@@ -183,6 +190,9 @@ body {
     }
 
     .col-copyright {
+      color: #ffffff;
+    }
+    p{
       color: #ffffff;
     }
   }

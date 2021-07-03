@@ -5,6 +5,12 @@ body {
   color: #92B74B;
 }
 
+p {
+  font-size: small;
+  color: red;
+  margin-left: 200px;
+}
+
 .navbar .navbar-nav .navbar-brand img {
   max-height: 40px;
 }
@@ -159,6 +165,10 @@ body {
 }
 
 .section-footer .container .row .col-copyright {
+  color: #ffffff;
+}
+
+.section-footer .container .row p {
   color: #ffffff;
 }
 /*# sourceMappingURL=pemesanan.css.map */

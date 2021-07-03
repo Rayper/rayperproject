@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Page</title>
     <!-- <link rel="stylesheet" href="<?= base_url(); ?>/bootstrap/css/bootstrap.css"> -->
+    <link rel="shortcut icon" href="/img/Favicon.ico">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -16,18 +17,44 @@
     <!-- navbar -->
     <?= $this->include('templates/navbarUser'); ?>
     
+    <!-- Modal -->
+    <form action="<?= site_url('Member/feedback') ?>" method="post">
+        <div class="modal fade" id="feedbackModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Feedback Anda Sangat Berguna Untuk Kemajuan Website Kami</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    <input type="hidden" name="user_id" value="<?= session()->get('user_id'); ?>">
+                    <textarea class="form-control" id="feedback" rows="5" name="feedback" placeholder="Isi Feedback"></textarea>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-success btn-send" onClick="return sukses()">Kirim</button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </form>
+
     <!-- Header -->
     <header class="text-center">
         <h1>
-        Pemesanan Makam dengan mudah
+        Pesan Makam Dengan Mudah
             <br>
-            Secara Online 
+            Hanya Sekali Klik
         </h1>
         <p class="mt-3">
             Temukan TPU yang tersedia, bagaimana prosedur
             <br> 
             pemakaman, dan pesan makam dengan cepat dan aman
-        </p>    
+        </p>
+        <a href="#procedure" class="btn btn-start px-4 py-2 mt-3">
+            Mulai
+        </a>
     </header>
     <!-- Main -->
     <main>
@@ -40,7 +67,7 @@
                         <p>Kober adalah aplikasi berbasis web untuk membantu masyarakat
                         <br>
                         melakukan <b>pemesanan pemakaman secara online</b></p> 
-                        <a href="#" class="btn btn-read px-4 py-2">
+                        <a href="/member/tentangkami" class="btn btn-read px-4 py-2">
                             Baca lebih lanjut
                         </a>
                     </div>
@@ -64,7 +91,7 @@
                 <div class="row section-feature-kober justify-content-center">
                     <div class="col-sm-5 col-md-4 col-lg-3 mx-3">
                         <div class="card h-100" style="width: 18rem;">
-                            <a href="#" class="btn btn-feature">
+                            <a href="/Member/caritpu" class="btn btn-feature">
                                 <img src="/img/Cari TPU.png" alt="Icon Cari TPU" class="card-img-top">
                                 <div class="card-body">
                                 <h2 class="card-title">Cari TPU</h2>
@@ -80,7 +107,7 @@
 
                     <div class="col-sm-6 col-md-4 col-lg-3 mx-3">
                         <div class="card h-100" style="width: 18rem;">
-                            <a href="#" class="btn btn-feature">
+                            <a href="/Member/carinama" class="btn btn-feature">
                                 <img src="/img/Cari Nama.png" alt="Icon Cari Nama" class="card-img-top">
                                 <div class="card-body">
                                 <h2 class="card-title">Cari Nama</h2>
@@ -96,7 +123,7 @@
 
                     <div class="col-sm-6 col-md-4 col-lg-3 mx-3">
                         <div class="card h-100" style="width: 18rem;">
-                            <a href="#" class="btn btn-feature">
+                            <a href="/Member/lihatinvoice" class="btn btn-feature">
                                 <img src="/img/Info Pemesanan.png" alt="Icon Info Pemesanan" class="card-img-top">
                                 <div class="card-body">
                                 <h2 class="card-title">Info Pemesanan</h2>
@@ -184,10 +211,7 @@
                                 sesuai harga yang tertera, jika status pembayaran sudah dibayar. Selamat anda telah meyelesaikan
                                 pemesanan pemakaman secara online simpan dan tunjukan invoice atau IPTM kepada pihak TPU yang
                                 terkait !</p>
-                            <a href="#" class="btn btn-register px-4 py-2 mr-2">
-                                Daftar Akun
-                            </a>
-                            <a href="#" class="btn btn-faq px-4 py-2">
+                            <a href="/Member/faq" class="btn btn-faq px-4 py-2">
                                 Lihat FAQ
                             </a>
                         </div>
@@ -203,9 +227,25 @@
     <!-- footer -->
     <?= $this->include('templates/footer'); ?>
 
+    <script>
+	function sukses()
+    {
+		Swal.fire({
+        icon: 'success',
+        title: 'Berhasil',
+        text:  'Berhasil mengirimkan Feedback!',
+        confirmButtonColor: '#92b74b',
+        showConfirmButton: true,
+    });
+	}
+    </script>
+    
+
     
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    <script src="/js/sweetalert2.all.js"></script>
+
 </body>
 </html>

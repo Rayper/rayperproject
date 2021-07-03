@@ -1,7 +1,26 @@
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital@1&display=swap");
 body {
   background-color: #ffffff;
+  font-family: 'Source Sans Pro', sans-serif;
   scroll-behavior: smooth;
+}
+
+.btn-secondary {
+  color: #fff;
+  background-color: #92B74B;
+}
+
+.btn-secondary:hover {
+  background-color: #9FD438;
+  color: #ffffff;
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show > .btn-secondary.dropdown-toggle {
+  color: #fff;
+  background-color: #9FD438;
+}
+
+li.statuslunas {
+  color: green;
 }
 
 .navbar .navbar-nav .navbar-brand img {
@@ -14,9 +33,24 @@ body {
   font-size: 15px;
 }
 
+.navbar .dropdown .btn-login {
+  background-color: #92B74B;
+  font-family: 'Merriweather', serif;
+  color: #ffffff;
+}
+
+.navbar .dropdown .btn-login:hover {
+  background-color: #9FD438;
+  color: #ffffff;
+}
+
+.navbar .dropdown .dropdown-menu a {
+  font-family: 'Merriweather', serif;
+}
+
 .section-invoice-header {
   min-height: 150px;
-  background: #E7E5E5;
+  background: #92B74B;
   margin-top: 10px;
 }
 
@@ -32,38 +66,13 @@ body {
 }
 
 .section-invoice-breadcrumb .breadcrumb-item {
-  color: #92B74B;
+  color: #EEF3EF;
   font-family: 'Merriweather', serif;
 }
 
 .section-invoice-breadcrumb .breadcrumb-item.active {
   font-weight: bolder;
-  color: #92B74B;
-}
-
-.btn-secondary {
-  background-color: #92B74B;
-  color: #ffffff;
-}
-
-.btn-secondary:hover {
-  background-color: #9FD438;
-  color: #ffffff;
-}
-
-.btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active {
-  background-color: #92B74B;
-  color: #ffffff;
-}
-
-.show > .btn-secondary.dropdown-toggle {
-  background-color: #92B74B;
-  color: #ffffff;
-}
-
-.secondary.dropdown-toggle {
-  color: #fff;
-  background-color: #9FD438;
+  color: #EEF3EF;
 }
 
 .section-invoice-content .card {
@@ -78,21 +87,65 @@ body {
 .section-invoice-content .card .section-invoice-header {
   min-height: 150px;
   margin-top: 0px;
+  background: #E7E5E5;
 }
 
-.section-invoice-footer {
+.section-invoice-content .card .section-invoice-header h5 {
+  font-family: 'Merriweather', serif;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.section-invoice-content .card .section-invoice-info h5 {
+  font-family: 'Merriweather', serif;
+  font-size: 25px;
+}
+
+.section-invoice-content .card .section-invoice-info .disclaimer {
+  color: #FF0000;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+}
+
+.section-invoice-content .card .section-invoice-border {
+  border-bottom: 2px solid #E7E5E5;
+}
+
+.section-invoice-content .card .section-invoice-total .total .number {
+  padding-left: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+}
+
+.section-invoice-content .card .section-invoice-total .total .number2 {
+  padding-left: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  color: #92B74B;
+  font-weight: bold;
+}
+
+.section-invoice-content .section-invoice-footer {
   min-height: 150px;
   background: #E7E5E5;
   margin-top: 20px;
 }
 
-.btn-home {
+.section-invoice-content .section-invoice-footer h6 {
+  font-weight: bold;
+}
+
+.section-invoice-content .section-invoice-footer .status {
+  color: #FF0000;
+}
+
+.section-invoice-content .btn-home {
   background: #92B74B;
   color: #ffffff;
   font-family: 'Merriweather', serif;
 }
 
-.btn-home:hover {
+.section-invoice-content .btn-home:hover {
   color: #ffffff;
   background: #9FD438;
 }

@@ -35,7 +35,8 @@ class Filters extends BaseConfig
 			// 'csrf',
 			'Auth' => [
 				'except' => [
-				'auth' , 'auth/*'
+				'auth' , 'auth/*',
+				'home'
 				]]
 		],
 		'after'  => [

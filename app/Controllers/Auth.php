@@ -29,7 +29,8 @@ class Auth extends BaseController
     public function login()
     {
         $data = [
-            'title' => 'Masuk'
+            'title' => 'Masuk',
+            'validation'    => \Config\Services::validation()
         ];
        
         return view('auth/v_login', $data);
@@ -37,6 +38,29 @@ class Auth extends BaseController
 
     public function cekpassword()
     {
+
+        if(!$this->validate([
+            'email' => [
+                'rules' => 'required|valid_email',
+
+                'errors' => [
+                    'required'              => 'Email wajib diisi',
+                    'valid_email'           => 'Email tidak valid'
+                ]
+            ],
+            'password' => [
+                'rules' => 'required',
+
+                'errors' => [
+                    'required'              => 'Password wajib diisi'
+                ]
+            ]
+        ])){
+        
+        $validation = \Config\Services::validation();
+		return redirect()->to('login')->withInput()->with('validation', $validation);
+        }
+
         $m_user = new m_user();
 
         $email      = $this->request->getVar('email');
@@ -48,7 +72,9 @@ class Auth extends BaseController
         if($data){
             if(password_verify($password, $data->password)){
                 session()->set([
-                    'id'            => $data->id,
+                    'email'         => $data->email,
+                    'user_id'       => $data->user_id,
+                    'phonenumber'   => $data->phonenumber,
                     'fullname'      => $data->fullname,
                     'logged_in'     => TRUE, 
                     'role_id'       => $data->role_id
@@ -133,9 +159,9 @@ class Auth extends BaseController
 		$m_user = new m_user();
 
 		$m_user->save([
-            'email'       => $this->request->getVar('email'),
-            'fullname'    => $this->request->getVar('fullname'),
-            'phonenumber' => $this->request->getVar('phonenumber'),
+            'email'       => $this->request->getPost('email'),
+            'fullname'    => $this->request->getPost('fullname'),
+            'phonenumber' => $this->request->getPost('phonenumber'),
             'password'    => password_hash($this->request->getPost('password'), PASSWORD_BCRYPT),
             'confirmpw'   => password_hash($this->request->getPost('confirmpw'), PASSWORD_BCRYPT)
         ]);

@@ -23,7 +23,8 @@ class App extends BaseConfig
 	 *
 	 * @var string
 	 */
-	public $baseURL = 'https://koberapps.herokuapp.com';
+	public $baseURL = 'http://localhost:8080/';
+	// public $baseURL = 'https://koberapps.herokuapp.com';
 
 	/**
 	 * --------------------------------------------------------------------------
