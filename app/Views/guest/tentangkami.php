@@ -65,7 +65,7 @@
     </main>
 
     <!-- Footer -->
-    <?= $this->include('templates/footer'); ?>
+    <?= $this->include('templates/footerguest'); ?>
 
     <script>
       function sukses()
