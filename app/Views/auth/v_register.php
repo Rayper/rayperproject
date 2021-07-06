@@ -43,7 +43,7 @@
                             </div>
                         </div>
 
-                        <p>
+                        <p class="register">
                             <?= $validation->getError('fullname'); ?>
                         </p>
 
@@ -53,7 +53,7 @@
                             </div>
                         </div>
 
-                        <p>
+                        <p class="register">
                             <?= $validation->getError('email'); ?>
                         </p>
 
@@ -63,7 +63,7 @@
                             </div>
                         </div>
 
-                        <p>
+                        <p class="register">
                             <?= $validation->getError('phonenumber'); ?>
                         </p>
 
@@ -73,7 +73,7 @@
                             </div>
                         </div>
 
-                        <p>
+                        <p class="register">
                             <?= $validation->getError('phonenumber'); ?>
                         </p>
 
@@ -83,7 +83,7 @@
                             </div>
                         </div>
 
-                        <p>
+                        <p class="register">
                             <?= $validation->getError('phonenumber'); ?>
                         </p>
 
