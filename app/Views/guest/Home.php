@@ -29,7 +29,7 @@
             <br> 
             pemakaman, dan pesan makam dengan cepat dan aman
         </p>    
-        <a href="login" class="btn btn-start px-4 py-2 mt-3">
+        <a href="/auth/login" class="btn btn-start px-4 py-2 mt-3">
             Mulai
         </a>
     </header>
@@ -44,7 +44,7 @@
                         <p>Kober adalah aplikasi berbasis web untuk membantu masyarakat
                         <br>
                         melakukan <b>pemesanan pemakaman secara online</b></p> 
-                        <a href="#" class="btn btn-read px-4 py-2">
+                        <a href="/guest/tentangkami" class="btn btn-read px-4 py-2">
                             Baca lebih lanjut
                         </a>
                     </div>
@@ -68,7 +68,7 @@
                 <div class="row section-feature-kober justify-content-center">
                     <div class="col-sm-5 col-md-4 col-lg-3 mx-3">
                         <div class="card h-100" style="width: 18rem;">
-                            <a href="#" class="btn btn-feature">
+                            <a href="/auth/login" class="btn btn-feature">
                                 <img src="/img/Cari TPU.png" alt="Icon Cari TPU" class="card-img-top">
                                 <div class="card-body">
                                 <h2 class="card-title">Cari TPU</h2>
@@ -84,7 +84,7 @@
 
                     <div class="col-sm-6 col-md-4 col-lg-3 mx-3">
                         <div class="card h-100" style="width: 18rem;">
-                            <a href="#" class="btn btn-feature">
+                            <a href="/auth/login" class="btn btn-feature">
                                 <img src="/img/Cari Nama.png" alt="Icon Cari Nama" class="card-img-top">
                                 <div class="card-body">
                                 <h2 class="card-title">Cari Nama</h2>
@@ -100,7 +100,7 @@
 
                     <div class="col-sm-6 col-md-4 col-lg-3 mx-3">
                         <div class="card h-100" style="width: 18rem;">
-                            <a href="#" class="btn btn-feature">
+                            <a href="/auth/login" class="btn btn-feature">
                                 <img src="/img/Info Pemesanan.png" alt="Icon Info Pemesanan" class="card-img-top">
                                 <div class="card-body">
                                 <h2 class="card-title">Info Pemesanan</h2>
@@ -188,10 +188,10 @@
                                 sesuai harga yang tertera, jika status pembayaran sudah dibayar. Selamat anda telah meyelesaikan
                                 pemesanan pemakaman secara online simpan dan tunjukan invoice atau IPTM kepada pihak TPU yang
                                 terkait !</p>
-                            <a href="#" class="btn btn-register px-4 py-2 mr-2">
+                            <a href="/auth/register" class="btn btn-register px-4 py-2 mr-2">
                                 Daftar Akun
                             </a>
-                            <a href="#" class="btn btn-faq px-4 py-2">
+                            <a href="/guest/faq" class="btn btn-faq px-4 py-2">
                                 Lihat FAQ
                             </a>
                         </div>

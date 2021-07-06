@@ -272,7 +272,6 @@ class Member extends BaseController
         $kkahli = $this->request->getFile('KKAhliWaris');
         $ktpsaksi = $this->request->getFile('KTPSaksi');
         $kksaksi = $this->request->getFile('KKSaksi');
-        // $suratpernyataan = $this->request->getFile('suratpernyataan');
 
         $suratkematianname = $suratkematian->getRandomName();
         $ktpalmname = $ktpalm->getRandomName();
@@ -281,7 +280,6 @@ class Member extends BaseController
         $kkahliname = $kkahli->getRandomName();
         $ktpsaksiname = $ktpsaksi->getRandomName();
         $kksaksiname = $kksaksi->getRandomName();
-        // $suratpernyataanname = $suratpernyataan->getRandomName();
 
         $suratkematian->move('uploaded_data', $suratkematianname);
         $ktpalm->move('uploaded_data', $ktpalmname);
@@ -290,7 +288,6 @@ class Member extends BaseController
         $kkahli->move('uploaded_data', $kkahliname);
         $ktpsaksi->move('uploaded_data', $ktpsaksiname);
         $kksaksi->move('uploaded_data', $kksaksiname);
-        // $suratpernyataan->move('uploaded_data', $suratpernyataanname);
         
          
 
@@ -317,7 +314,6 @@ class Member extends BaseController
             'KKAhliWaris'       => $kkahliname,
             'KTPSaksi'          => $ktpsaksiname,
             'KKSaksi'           => $kksaksiname
-            // 'suratpernyataan'   => NULL
         ]);
 
 		return redirect()->to('home');

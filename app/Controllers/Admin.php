@@ -17,7 +17,6 @@ class Admin extends BaseController
         $this->m_user = new m_user();
         $this->m_pemesanan = new m_pemesanan();
         $this->m_berita = new m_berita();
-        $this->m_tumpangtindih = new m_tumpangtindih();
         helper('form');
         helper('number');
         helper('date');
@@ -56,8 +55,7 @@ class Admin extends BaseController
     public function invoice()
     {
         $paginate = 6;
-        $data['datainvoice']   = $this->m_pemesanan->join('status_pembayaran ', 'form_pemesanan.status = status_pembayaran.status')->join('blok_tpu ', 'form_pemesanan.BlokTPU = blok_tpu.Blok_id')->paginate($paginate, 'datainvoice');
-        $data['datatumpang']   = $this->m_tumpangtindih->join('status_pembayaran ', 'status_pembayaran.status = form_pemesanantumpang.status')->paginate($paginate, 'datatumpang');
+        $data['datainvoice']   = $this->m_pemesanan->join('status_pembayaran ', 'form_pemesanan.status = status_pembayaran.status')->join('blok_tpu ', 'form_pemesanan.BlokTPU = blok_tpu.Blok_id')->orderBy('form_pemesanan.invoice_id', 'asc')->paginate($paginate, 'datainvoice');
         $data['pager']         = $this->m_pemesanan->pager;
         return view('admin/invoice', $data);
     }

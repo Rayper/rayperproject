@@ -36,7 +36,7 @@ class Filters extends BaseConfig
 			'Auth' => [
 				'except' => [
 				'auth' , 'auth/*',
-				'home'
+				'Guest', 'guest/*'
 				]]
 		],
 		'after'  => [

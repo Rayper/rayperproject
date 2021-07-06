@@ -25,7 +25,7 @@
                     <?= csrf_field();?>
                         <div class="form-row justify-content-center">
                             <div class="col-lg-8">
-                                <a href="/Home">
+                                <a href="/Guest/Home">
                                     <img src="/img//Logo Kober V1.png" class="img-logo pl-4" alt="Logo KOBER">
                                 </a>
                             </div>
