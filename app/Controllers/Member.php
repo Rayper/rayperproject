@@ -11,8 +11,6 @@ use App\Models\m_tumpangtindih;
 
 class Member extends BaseController
 {
-    // protected $helpers = [];
-    // protected $m_kategori;
     protected $m_tpu;
 
     public function index()
@@ -29,7 +27,6 @@ class Member extends BaseController
         $this->m_pemesanan = new m_pemesanan();
         $this->m_berita = new m_berita();
         $this->m_feedback = new m_feedback();
-        $this->m_tumpangtindih = new m_tumpangtindih();
 
         helper('form');
         helper('number');
@@ -325,121 +322,6 @@ class Member extends BaseController
 
 		return redirect()->to('home');
     }
-
-    public function savemakamtumpangtindih()
-    {
-        if(!$this->validate([
-            'namaAlm' => [
-                'rules' => 'required|is_unique[form_pemesanan.namaAlm]',
-
-                'errors' => [
-                    'required'              => 'Nama Almarhum wajib diisi',
-                    'is_unique'             => 'Nama Almarhum Sudah Terdaftar'
-                ]
-            ],
-
-            'nikAlm' => [
-                'rules' => 'required|is_unique[form_pemesanan.nikAlm]',
-
-                'errors' => [
-                    'required'              => 'NIK Almarhum wajib diisi',
-                    'is_unique'             => 'NIK Almarhum Sudah Terdaftar'
-                ]
-            ],
-
-            'namaAhliWaris' => [
-                'rules' => 'required|is_unique[form_pemesanan.namaAhliWaris]',
-                
-                'errors' => [
-                    'required'             => 'Nama Ahli Waris wajib diisi',
-                    'is_unique'            => 'Nama Ahli Waris Sudah Terdaftar'
-                ]
-            ],
-
-            'alamatAhliWaris' => [
-                'rules' => 'required|is_unique[form_pemesanan.alamatAhliWaris]',
-                
-                'errors' => [
-                    'required'             => 'Alamat Ahli Waris wajib diisi',
-                    'is_unique'            => 'Alamat Ahli Waris Sudah Terdaftar'
-                ]
-            ],
-
-            'NoHPAhliWaris' => [
-                'rules' => 'required|numeric|min_length[8]|max_length[30]|is_unique[form_pemesanan.NoHPAhliWaris]',
-
-                'errors' => [
-                    'required'              => 'Nomor Handhphone Ahli Waris wajib diisi',
-                    'numeric' 		        => 'Nomor Handphone Ahli Warisharus diisi dengan angka saja',
-                    'min_length'            => 'Nomor Handphone Ahli Waris minimal terdiri dari 8 angka',
-                    'max_length'            => 'Nomor Handphone Ahli Waris maksimal terdiri dari 30 angka',
-                    'is_unique'             => 'Nomor Handphone Ahli Waris Sudah Terdaftar'
-
-                ]
-            ]
-        ])){
-        
-        $validation = \Config\Services::validation();
-		return redirect()->to('pemesananmakam')->back()->withInput()->with('validation', $validation);
-        }
-
-        // dd($this->request->getVar());
-		$m_tumpangtindih = new m_tumpangtindih();
-
-        $suratkematian = $this->request->getFile('suratKematian');
-        $ktpalm = $this->request->getFile('KTPAlm');
-        $kkalm = $this->request->getFile('KKAlm');
-        $ktpahli = $this->request->getFile('KTPAhliWaris');
-        $kkahli = $this->request->getFile('KKAhliWaris');
-        $ktpsaksi = $this->request->getFile('KTPSaksi');
-        $kksaksi = $this->request->getFile('KKSaksi');
-        $suratpernyataan = $this->request->getFile('suratpernyataan');
-
-        $suratkematianname = $suratkematian->getRandomName();
-        $ktpalmname = $ktpalm->getRandomName();
-        $kkalmname = $kkalm->getRandomName();
-        $ktpahliname = $ktpahli->getRandomName();
-        $kkahliname = $kkahli->getRandomName();
-        $ktpsaksiname = $ktpsaksi->getRandomName();
-        $kksaksiname = $kksaksi->getRandomName();
-        $suratpernyataanname = $suratpernyataan->getRandomName();
-
-        $suratkematian->move('uploaded_data', $suratkematianname);
-        $ktpalm->move('uploaded_data', $ktpalmname);
-        $kkalm->move('uploaded_data', $kkalmname);
-        $ktpahli->move('iuploaded_data', $ktpahliname);
-        $kkahli->move('uploaded_data', $kkahliname);
-        $ktpsaksi->move('uploaded_data', $ktpsaksiname);
-        $kksaksi->move('uploaded_data', $kksaksiname);
-        $suratpernyataan->move('uploaded_data', $suratpernyataanname);
-
-		$m_tumpangtindih->save([
-            'user_id'           => $this->request->getVar('user_id'),
-            'tpu_id'            => $this->request->getVar('tpu_id'),
-            'NamaCustomer'      => $this->request->getVar('NamaCustomer'),
-            'NamaTPU'           => $this->request->getVar('NamaTPU'),
-            'KategoriTPU'       => $this->request->getVar('KategoriTPU'),
-            'UnitTPU'           => $this->request->getVar('UnitTPU'),
-            'namaAlm'           => $this->request->getVar('namaAlm'),
-            'nikAlm'            => $this->request->getVar('nikAlm'),
-            'tanggalKematian'   => $this->request->getVar('tanggalKematian'),
-            'tanggaldiKubur'    => $this->request->getVar('tanggaldiKubur'),
-            'namaAhliWaris'     => $this->request->getVar('namaAhliWaris'),
-            'alamatAhliWaris'   => $this->request->getVar('alamatAhliWaris'),
-            'NoHPAhliWaris'     => $this->request->getVar('NoHPAhliWaris'),
-            'suratKematian'     => $suratkematianname,
-            'KTPAlm'            => $ktpalmname,
-            'KKAlm'             => $kkalmname,
-            'KTPAhliWaris'      => $ktpahliname,
-            'KKAhliWaris'       => $kkahliname,
-            'KTPSaksi'          => $ktpsaksiname,
-            'KKSaksi'           => $kksaksiname,
-            'suratpernyataan'   => $suratpernyataanname
-        ]);
-
-		return redirect()->to('home');
-    }
-
 
     public function carinama()
     {
