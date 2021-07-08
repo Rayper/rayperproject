@@ -32,6 +32,12 @@ p.judul {
   font-size: 15px;
 }
 
+a.buttonback {
+  font-family: 'Merriweather', serif;
+  color: #92B74B;
+  font-size: 15px;
+}
+
 .navbar .navbar-nav .nav-link {
   font-family: 'Merriweather', serif;
   color: #92B74B;

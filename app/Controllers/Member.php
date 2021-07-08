@@ -316,7 +316,7 @@ class Member extends BaseController
             'KKSaksi'           => $kksaksiname
         ]);
 
-		return redirect()->to('home');
+		return redirect()->to('lihatinvoice');
     }
 
     public function carinama()
@@ -423,6 +423,18 @@ class Member extends BaseController
 
 		return redirect()->to('/member/lihatinvoice');
         
+    }
+
+    public function cekpenolakan($invoice_id)
+    {
+        $m_pemesanan = new m_pemesanan();
+
+        $data = 
+            [
+                'datainvoice'    => $this->m_pemesanan->getdetailinvoice($invoice_id)
+            ];
+        
+        return view('member/cekpenolakan', $data);
     }
 
 

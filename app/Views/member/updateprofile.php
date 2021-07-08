@@ -89,7 +89,7 @@
 
                         <div class="form-row justify-content-center">
                             <div class="col-lg-8">
-                                <button type="submit" class="btn btn-register mx-3 my-2" onClick="return sukses()">Daftar</button>
+                                <button type="submit" class="btn btn-register mx-3 my-2" onClick="return sukses()">Ubah</button>
                             </div>
                         </div>
                     </form>

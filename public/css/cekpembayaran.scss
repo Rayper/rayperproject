@@ -33,6 +33,12 @@ p.judul{
     color:black;
     font-size: 15px;
 }
+
+a.buttonback{
+    font-family: 'Merriweather', serif;
+    color:#92B74B;
+    font-size: 15px;
+}
 //Navbar
 .navbar{
     .navbar-nav{
@@ -44,7 +50,6 @@ p.judul{
             padding: 14px 16px;
             text-decoration: none;
             border-bottom: 3px solid transparent;
-
 
             &:hover{
                 color: #92B74B;

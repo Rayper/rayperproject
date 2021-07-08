@@ -72,6 +72,18 @@ class Admin extends BaseController
         return view('admin/cekbukti', $data);
     }
 
+    public function penolakan($invoice_id)
+    {
+        $m_pemesanan = new m_pemesanan();
+
+        $data = 
+            [
+                'datainvoice'    => $this->m_pemesanan->getdetailinvoice($invoice_id)
+            ];
+        
+        return view('admin/penolakan', $data);
+    }
+
     public function ubahstatus($invoice_id)
     {
         // dd($this->request->getVar());

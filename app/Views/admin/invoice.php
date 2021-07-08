@@ -38,7 +38,8 @@
                                 <th scope="col">Harga</th>
                                 <th scope="col">Jenis Pemakaman</th>
                                 <th scope="col">Status Pembayaran</th>
-                                <th scope="col">Action</th>
+                                <th scope="col">Konfirmasi</th>
+                                <th scope="col">Tolak</th>
                             </tr>
                             </thead>
                             <tbody>
@@ -60,6 +61,9 @@
                                 <td><?= $dt['ket'] ?></td>
                                 <td>
                                     <a href="/admin/cekbukti/<?= $dt['invoice_id'] ?>" class="btn btn-secondary btn-sm px-3">Aksi</a>
+                                </td>
+                                <td>
+                                    <a href="/admin/penolakan/<?= $dt['invoice_id'] ?>" class="btn btn-danger ">Aksi</a>
                                 </td>
                             </tr>
                             <?php endforeach; ?>

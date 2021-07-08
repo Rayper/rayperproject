@@ -80,6 +80,7 @@
                                 </table>
                                 <br>
                                 <p>Lakukan Pembayaran ke Nomor Rekening <b>527129846 (BCA An. KOBER)</b></p>
+                                <p>Untuk mengkonfirmasi pembayaran dapat menghubungi admin (085719644122 a.n admin kober)</b></p>
                             </div>
                         </div>
                     </section>
