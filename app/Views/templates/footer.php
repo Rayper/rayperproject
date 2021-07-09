@@ -28,10 +28,16 @@
                     <p>Copyrights © 2021 All Rights Reserved </p>
                 </div>
                 <div class="col-lg-3 pt-2 pb-2">
-                    <a href="#">
+                    <a href="https://www.facebook.com/profile.php?id=100070556821027">
                         <img src="/img/Facebook.png" alt="Icon Facebook">
+                    </a>
+                    <a href="https://twitter.com/koberapps">
                         <img src="/img/Twitter.png" alt="Icon Twitter">
+                    </a>
+                    <a href="https://www.linkedin.com/in/kober-apps-8b6595216/">
                         <img src="/img/Linkedin.png" alt="Icon Linkedin">
+                    </a>
+                    <a href="https://www.instagram.com/koberapps/">
                         <img src="/img/Instagram.png" alt="Icon Instagram">
                     </a>
                 </div>
