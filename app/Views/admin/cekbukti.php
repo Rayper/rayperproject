@@ -53,22 +53,22 @@
                         Konfirmasi Bukti Pembayaran
                     </div>
                     <?php foreach ($datainvoice as $dt) : ?>
-                        <form method="post" action="<?= site_url('Admin/ubahstatus/'.$dt['invoice_id']) ?>" enctype="multipart/form-data">
-                            <div class="card-body">
-                                <blockquote class="blockquote mb-0">
-                                <div class="custom control custom-switch ml-7">
-                                    <input type="hidden" name="invoice_id" value="<?= $dt['invoice_id']; ?>">
-                                    <input type="checkbox" class="custom-control-input" id="statuspembayaran" value="1" name="status">
-                                    <label for="statuspembayaran" class="custom-control-label">Konfirmasi Bukti Pembayaran</label>
-                                </div>
-                                <br>
-                                <div class="form-group row">
-                                    <div class="col-sm-10">
-                                        <button class="btn btn-secondary" type="submit" onclick="sukses()">Ubah</button>
+                            <form method="post" action="<?= site_url('Admin/ubahstatus/'.$dt['invoice_id']) ?>" enctype="multipart/form-data">
+                                <div class="card-body">
+                                    <blockquote class="blockquote mb-0">
+                                    <div class="custom control custom-switch ml-7">
+                                        <input type="hidden" name="invoice_id" value="<?= $dt['invoice_id']; ?>">
+                                        <input type="checkbox" class="custom-control-input" id="statuspembayaran" value="1" name="status">
+                                        <label for="statuspembayaran" class="custom-control-label">Konfirmasi Bukti Pembayaran</label>
+                                    </div>
+                                    <br>
+                                    <div class="form-group row">
+                                        <div class="col-sm-10">
+                                            <button class="btn btn-secondary" type="submit" onclick="sukses()">Ubah</button>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </form>
+                            </form>
                     <?php endforeach; ?>
                 </div>
             </section>

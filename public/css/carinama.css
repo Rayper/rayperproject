@@ -69,6 +69,14 @@ h1 {
   font-size: 30px;
 }
 
+h1.kosong {
+  font-family: 'Merriweather', serif;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 30px;
+  color: red;
+}
+
 .section-header-tpu .container .row .custom-select {
   max-width: 150px;
   margin-top: 40px;

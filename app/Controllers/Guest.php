@@ -15,7 +15,7 @@ class Guest extends BaseController
 
     public function index()
     {
-        $session = session();
+        return view('guest/Home');
     }
 
     public function __construct()
