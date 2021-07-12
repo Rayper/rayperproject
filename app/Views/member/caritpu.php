@@ -76,7 +76,7 @@
                                             <p class="text-center">Unit <?= $dt['Unit'] ?></p>
                                             <p class="text-center">Kategori : <?= $dt['nama'] ?></p>
                                             <p class="text-center">Hubungi   : <?= $dt['Contact'] ?></p>
-                                            <a href="<?= $dt['Link'] ?>" class="text-center">Link Lokasi</a><br>
+                                            <a href="<?= $dt['Link'] ?>" target="_blank" class="text-center">Link Lokasi</a><br>
                                             <a href="/member/pemesananmakam/<?= $dt['tpu_id'] ?>" class="btn btn-full px-3 py-1 mt-3">Pesan</a>
                                         </div>
                                 </div>
