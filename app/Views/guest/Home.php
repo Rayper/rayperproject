@@ -29,7 +29,7 @@
             <br> 
             pemakaman, dan pesan makam dengan cepat dan aman
         </p>    
-        <a href="#procedureContent" class="btn btn-start px-4 py-2 mt-3">
+        <a href="#procedure" class="btn btn-start px-4 py-2 mt-3">
             Mulai
         </a>
     </header>
