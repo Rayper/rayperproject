@@ -81,7 +81,7 @@
                                             <p class="text-center">Unit <?= $dt['Unit'] ?></p>
                                             <p class="text-center">Kategori : <?= $dt['nama'] ?></p>
                                             <p class="text-center">Hubungi   : <?= $dt['Contact'] ?></p>
-                                            <a href="<?= $dt['Link'] ?>" class="text-center">Link Lokasi</a><br>
+                                            <a href="<?= $dt['Link'] ?>" class="text-center" target="_blank" >Link Lokasi</a><br>
                                             <button class="btn btn-full px-3 py-1 mt-3" data-toggle="modal" data-target="#tumpangModal">Pesan</button>
                                         </div>
                                 </div>
