@@ -86,15 +86,16 @@ class Admin extends BaseController
 
     public function ubahstatus($invoice_id)
     {
+
+        // dd($this->request->getVar());
+
         $m_pemesanan = new m_pemesanan();
 
         $invoice_id = $this->request->getPost('invoice_id');
 
-        dd($this->request->getVar());
-        
-		// $m_pemesanan->update($invoice_id, ['status' => $this->request->getPost('status')]);
+		$m_pemesanan->update($invoice_id, ['status' => $this->request->getPost('status')]);
 
-		// return redirect()->to('/admin/invoice');
+		return redirect()->to('/admin/invoice');
         
     }
 

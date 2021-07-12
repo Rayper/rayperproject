@@ -73,7 +73,7 @@
                                 <?php if($dt['ket'] == 'Lunas') : ?>
                                     <button class="btn btn-success btn-sm px-3">Pembayaran Diterima</button>
                                 <?php elseif($dt['ket'] == 'Belum Lunas') : ?>
-                                    <a href="/member/cekpembayaran/<?= $dt['invoice_id'] ?>" class="btn btn-primary btn-sm px-3">Menunggu Pembayaran</a>
+                                    <a href="/member/cekpembayaran/<?= $dt['invoice_id'] ?>" class="btn btn-primary btn-sm px-3">Upload Bukti Pembayaran</a>
                                 <?php else : ?>
                                     <a href="/member/cekpenolakan/<?= $dt['invoice_id'] ?>" class="btn btn-detail btn-sm px-3">Pemesanan Ditolak</a>
                                     <?php endif; ?>
