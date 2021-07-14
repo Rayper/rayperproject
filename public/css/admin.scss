@@ -1,0 +1,123 @@
+//Body
+body{
+    background-color: #ffffff;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #92B74B;
+    scroll-behavior: smooth;
+}
+
+//Navbar
+.navbar{
+    .navbar-nav{
+        .navbar-brand{
+            img{
+                max-height: 40px;
+            }
+        }
+  
+        .text{
+            color: #92B74B;
+            font-family: 'Merriweather', serif;
+            font-size: 15px;
+        }
+  
+    }
+  
+    .dropdown{
+        .btn-login{
+          background-color: #92B74B;
+          font-family: 'Merriweather', serif;
+          color: #ffffff;
+      
+          &:hover{
+            background-color: #9FD438;
+            color: #ffffff;
+          }
+        }
+  
+        .dropdown-menu{
+          a{
+            font-family: 'Merriweather', serif;
+          }
+        }
+      }
+  }
+
+//Main
+.section-hello-admin{
+    h1{
+      font-family: 'Merriweather', serif;
+      font-size: 40px;
+      font-weight: bolder;
+      border-bottom: 4px solid #F6FF00;
+      padding-bottom: 10px;  
+    }
+}
+
+.btn-secondary {
+    color: #fff;
+    background-color: #92B74B;
+
+    &:hover{
+        background-color: #9FD438;
+        color: #ffffff;
+    }
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle {
+    color: #fff;
+    background-color: #9FD438;
+}
+
+.page-item.active .page-link {
+    z-index: 3;
+    color: #fff;
+    background-color: #92B74B;
+    border-color: #92B74B;
+  }
+
+.section-feature-admin{
+    .section-card-admin{
+        .card{
+            background-color: #EEF3EF;
+            border-radius: 0px;
+            border-style: none;
+            box-shadow: 8px 8px 8px rgb(221, 205, 205);
+
+            &:hover{
+                text-shadow: none;
+                box-sizing: border-box;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                -webkit-transform: scale(1.1);
+                -ms-transform: scale(1.1);
+                transform: scale(1.1);
+                z-index: 2;
+            }
+
+            .card-img-top{
+                max-height: 70px;
+                max-width: 70px;
+            }
+            .card-body{
+                .card-title{
+                    font-family: 'Merriweather', serif;
+                    font-size: 20px;
+                    font-weight: 600;
+                }
+                .card-text{
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+
+}
+
+//Footer
+.section-footer-admin{
+    h1{
+        font-family: 'Merriweather', serif;
+        font-size: 15px;
+    }
+}

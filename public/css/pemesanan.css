@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital@1&display=swap");
+body {
+  background-color: #ffffff;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #92B74B;
+}
+
+p {
+  font-size: small;
+  color: red;
+  margin-left: 200px;
+}
+
+.navbar .navbar-nav .navbar-brand img {
+  max-height: 40px;
+}
+
+.navbar .navbar-nav .text {
+  color: #92B74B;
+  font-family: 'Merriweather', serif;
+  font-size: 15px;
+}
+
+.navbar .btn-login {
+  background-color: #92B74B;
+  font-family: 'Merriweather', serif;
+  color: #ffffff;
+}
+
+.navbar .btn-login:hover {
+  background-color: #9FD438;
+  color: #ffffff;
+}
+
+.section-form-header {
+  min-height: 150px;
+  background: #92B74B;
+  margin-top: 10px;
+}
+
+.section-form-breadcrumb {
+  margin-top: -90px;
+  min-height: 100vh;
+}
+
+.section-form-breadcrumb .breadcrumb {
+  background-color: transparent;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.section-form-breadcrumb .breadcrumb-item {
+  color: #EEF3EF;
+  font-family: 'Merriweather', serif;
+}
+
+.section-form-breadcrumb .breadcrumb-item.active {
+  font-weight: bolder;
+  color: #EEF3EF;
+}
+
+.btn-success {
+  background-color: #92B74B;
+  color: #ffffff;
+  margin-left: 350px;
+  margin-top: 15px;
+}
+
+.btn-success:hover {
+  background-color: #9FD438;
+  color: #ffffff;
+}
+
+.btn-success:not(:disabled):not(.disabled).active, .btn-success:not(:disabled):not(.disabled):active {
+  background-color: #92B74B;
+  color: #ffffff;
+}
+
+.btn-secondary {
+  background-color: #92B74B;
+  color: #ffffff;
+}
+
+.btn-secondary:hover {
+  background-color: #9FD438;
+  color: #ffffff;
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active {
+  background-color: #92B74B;
+  color: #ffffff;
+}
+
+.show > .btn-secondary.dropdown-toggle {
+  background-color: #92B74B;
+  color: #ffffff;
+}
+
+.secondary.dropdown-toggle {
+  color: #fff;
+  background-color: #9FD438;
+}
+
+.section-form-content .card {
+  margin-top: -680px;
+  min-height: 700px;
+  background: #FFFFFF;
+  margin-bottom: 50px;
+  -webkit-box-shadow: 0 0 3px #ccc;
+  box-shadow: 0 0 3px #ccc;
+}
+
+.section-form-content .card h1 {
+  font-family: 'Merriweather', serif;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 30px;
+}
+
+.section-form-content .card .form-group {
+  margin-left: 10px;
+}
+
+.section-form-content .card .form-group label {
+  color: #000000;
+}
+
+.section-form-content .card .btn-order {
+  background: #92B74B;
+  color: #ffffff;
+  font-family: 'Merriweather', serif;
+}
+
+.section-form-content .card .btn-order:hover {
+  color: #ffffff;
+  background: #9FD438;
+}
+
+.section-footer {
+  background-color: #92B74B;
+}
+
+.section-footer .container .row .heading-contact {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.section-footer .container .row .list-unstyled {
+  color: #ffffff;
+}
+
+.section-footer .container .row .heading-feedback {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.section-footer .container .row .btn-feedback {
+  color: #ffffff;
+  border-color: #ffffff;
+  border-radius: 9px;
+}
+
+.section-footer .container .row .btn-feedback:hover {
+  background-color: #9FD438;
+}
+
+.section-footer .container .row .col-copyright {
+  color: #ffffff;
+}
+
+.section-footer .container .row p {
+  color: #ffffff;
+}
+/*# sourceMappingURL=pemesanan.css.map */

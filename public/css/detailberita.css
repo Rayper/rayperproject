@@ -1,0 +1,146 @@
+body {
+  background-color: #ffffff;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: black;
+  scroll-behavior: smooth;
+}
+
+.navbar .navbar-nav .nav-link {
+  font-family: 'Merriweather', serif;
+  color: #92B74B;
+  float: left;
+  display: block;
+  padding: 14px 16px;
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  color: #92B74B;
+  font-family: 'Merriweather', serif;
+  border-bottom: 3px solid #92B74B;
+}
+
+.navbar .navbar-nav .nav-link.active {
+  color: #92B74B;
+  font-family: 'Merriweather', serif;
+  font-weight: bolder;
+  border-bottom: 3px solid #92B74B;
+}
+
+.navbar-brand img {
+  max-height: 40px;
+}
+
+.btn-login {
+  background-color: #92B74B;
+  font-family: 'Merriweather', serif;
+  color: #ffffff;
+}
+
+.btn-login:hover {
+  background-color: #9FD438;
+  color: #ffffff;
+}
+
+.section-detail-breadcrumb {
+  min-height: 60px;
+  background: #92B74B;
+}
+
+.section-detail-breadcrumb .breadcrumb {
+  padding-top: 30px;
+  background-color: transparent;
+}
+
+.section-detail-breadcrumb .breadcrumb-item {
+  color: #EEF3EF;
+  font-family: 'Merriweather', serif;
+}
+
+.section-detail-breadcrumb .breadcrumb-item.active {
+  font-weight: bolder;
+  color: #EEF3EF;
+}
+
+.btn-secondary {
+  background-color: #92B74B;
+  color: #ffffff;
+}
+
+.btn-secondary:hover {
+  background-color: #9FD438;
+  color: #ffffff;
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active {
+  background-color: #92B74B;
+  color: #ffffff;
+}
+
+.show > .btn-secondary.dropdown-toggle {
+  background-color: #92B74B;
+  color: #ffffff;
+}
+
+.secondary.dropdown-toggle {
+  color: #fff;
+  background-color: #9FD438;
+}
+
+.section-detail-berita {
+  text-align: justify;
+}
+
+.section-detail-berita h1 {
+  font-family: 'Merriweather', serif;
+}
+
+.section-detail-berita .img-fluid {
+  height: auto;
+  min-width: 100%;
+}
+
+.section-detail-berita a {
+  color: #92B74B;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+}
+
+.section-footer {
+  margin-top: 120px;
+  background-color: #92B74B;
+}
+
+.section-footer .container .row .heading-contact {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.section-footer .container .row .list-unstyled {
+  color: #ffffff;
+}
+
+.section-footer .container .row .heading-feedback {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.section-footer .container .row .btn-feedback {
+  color: #ffffff;
+  border-color: #ffffff;
+  border-radius: 9px;
+}
+
+.section-footer .container .row .btn-feedback:hover {
+  background-color: #9FD438;
+}
+
+.section-footer .container .row .col-copyright {
+  color: #ffffff;
+}
+
+.section-footer .container .row a {
+  text-decoration: none;
+}
+/*# sourceMappingURL=detailberita.css.map */

@@ -1,0 +1,96 @@
+//Body
+body{
+    background-color: #ffffff;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #92B74B;
+    scroll-behavior: smooth;
+}
+
+.page-item.active .page-link {
+  z-index: 3;
+  color: #fff;
+  background-color: #92B74B;
+  border-color: #92B74B;
+}
+
+//Navbar
+.navbar{
+    .navbar-nav{
+        .navbar-brand{
+            img{
+                max-height: 40px;
+            }
+        }
+  
+        .text{
+            color: #92B74B;
+            font-family: 'Merriweather', serif;
+            font-size: 15px;
+        }
+  
+    }
+  
+    .dropdown{
+      .btn-login{
+        background-color: #92B74B;
+        font-family: 'Merriweather', serif;
+        color: #ffffff;
+    
+        &:hover{
+          background-color: #9FD438;
+          color: #ffffff;
+        }
+      }
+
+      .dropdown-menu{
+        a{
+          font-family: 'Merriweather', serif;
+        }
+      }
+    }
+  }
+
+  .btn-secondary {
+    color: #fff;
+    background-color: #92B74B;
+
+    &:hover{
+        background-color: #9FD438;
+        color: #ffffff;
+    }
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle {
+    color: #fff;
+    background-color: #9FD438;
+}
+
+//Main
+.table-invoice-admin{
+  thead{
+    th{
+        background-color: #92B74B;
+        font-family: 'Merriweather', serif;
+        color: #ffffff;
+    }
+  }
+
+  button{
+    color: #ffffff;
+        background-color: #FF0000;
+        font-family: 'Merriweather', serif;
+
+        &:hover{
+            color: #ffffff;
+            background-color: #FF7272;
+        }
+  }
+}
+
+//Footer
+.section-footer-admin{
+    h1{
+        font-family: 'Merriweather', serif;
+        font-size: 15px;
+    }
+}

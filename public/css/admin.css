@@ -1,0 +1,102 @@
+body {
+  background-color: #ffffff;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #92B74B;
+  scroll-behavior: smooth;
+}
+
+.navbar .navbar-nav .navbar-brand img {
+  max-height: 40px;
+}
+
+.navbar .navbar-nav .text {
+  color: #92B74B;
+  font-family: 'Merriweather', serif;
+  font-size: 15px;
+}
+
+.navbar .dropdown .btn-login {
+  background-color: #92B74B;
+  font-family: 'Merriweather', serif;
+  color: #ffffff;
+}
+
+.navbar .dropdown .btn-login:hover {
+  background-color: #9FD438;
+  color: #ffffff;
+}
+
+.navbar .dropdown .dropdown-menu a {
+  font-family: 'Merriweather', serif;
+}
+
+.section-hello-admin h1 {
+  font-family: 'Merriweather', serif;
+  font-size: 40px;
+  font-weight: bolder;
+  border-bottom: 4px solid #F6FF00;
+  padding-bottom: 10px;
+}
+
+.btn-secondary {
+  color: #fff;
+  background-color: #92B74B;
+}
+
+.btn-secondary:hover {
+  background-color: #9FD438;
+  color: #ffffff;
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show > .btn-secondary.dropdown-toggle {
+  color: #fff;
+  background-color: #9FD438;
+}
+
+.page-item.active .page-link {
+  z-index: 3;
+  color: #fff;
+  background-color: #92B74B;
+  border-color: #92B74B;
+}
+
+.section-feature-admin .section-card-admin .card {
+  background-color: #EEF3EF;
+  border-radius: 0px;
+  border-style: none;
+  -webkit-box-shadow: 8px 8px 8px #ddcdcd;
+          box-shadow: 8px 8px 8px #ddcdcd;
+}
+
+.section-feature-admin .section-card-admin .card:hover {
+  text-shadow: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  z-index: 2;
+}
+
+.section-feature-admin .section-card-admin .card .card-img-top {
+  max-height: 70px;
+  max-width: 70px;
+}
+
+.section-feature-admin .section-card-admin .card .card-body .card-title {
+  font-family: 'Merriweather', serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.section-feature-admin .section-card-admin .card .card-body .card-text {
+  font-size: 15px;
+}
+
+.section-footer-admin h1 {
+  font-family: 'Merriweather', serif;
+  font-size: 15px;
+}
+/*# sourceMappingURL=admin.css.map */

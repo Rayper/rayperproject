@@ -1,0 +1,76 @@
+body {
+  background-color: #ffffff;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #92B74B;
+  scroll-behavior: smooth;
+}
+
+.page-item.active .page-link {
+  z-index: 3;
+  color: #fff;
+  background-color: #92B74B;
+  border-color: #92B74B;
+}
+
+.navbar .navbar-nav .navbar-brand img {
+  max-height: 40px;
+}
+
+.navbar .navbar-nav .text {
+  color: #92B74B;
+  font-family: 'Merriweather', serif;
+  font-size: 15px;
+}
+
+.navbar .dropdown .btn-login {
+  background-color: #92B74B;
+  font-family: 'Merriweather', serif;
+  color: #ffffff;
+}
+
+.navbar .dropdown .btn-login:hover {
+  background-color: #9FD438;
+  color: #ffffff;
+}
+
+.navbar .dropdown .dropdown-menu a {
+  font-family: 'Merriweather', serif;
+}
+
+.btn-secondary {
+  color: #fff;
+  background-color: #92B74B;
+}
+
+.btn-secondary:hover {
+  background-color: #9FD438;
+  color: #ffffff;
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show > .btn-secondary.dropdown-toggle {
+  color: #fff;
+  background-color: #9FD438;
+}
+
+.table-invoice-admin thead th {
+  background-color: #92B74B;
+  font-family: 'Merriweather', serif;
+  color: #ffffff;
+}
+
+.table-invoice-admin button {
+  color: #ffffff;
+  background-color: #FF0000;
+  font-family: 'Merriweather', serif;
+}
+
+.table-invoice-admin button:hover {
+  color: #ffffff;
+  background-color: #FF7272;
+}
+
+.section-footer-admin h1 {
+  font-family: 'Merriweather', serif;
+  font-size: 15px;
+}
+/*# sourceMappingURL=invoiceadmin.css.map */
