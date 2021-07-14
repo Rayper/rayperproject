@@ -20,7 +20,7 @@
                         <img src="/img/Login Image.jpg" alt="image" class="img-fluid">
                     </div>
                     <div class="col-lg-6 px-5 pt-5 justify-content-center">
-                        <form method="post" action="<?= site_url('Auth/cekpassword') ?>">
+                        <form method="post" action="<?= site_url('Auth/cekpassword') ?>" class="needs-validation" novalidate>
                             <?= csrf_field(); ?>
                                 <div class="form-row justify-content-center">
                                     <div class="col-lg-8">
@@ -51,23 +51,21 @@
                                
                                 <div class="form-row justify-content-center">
                                     <div class="col-lg-8">
-                                        <input type="email" name="email" id="email" placeholder="Email" class="form-control mx-3 my-2 <?= ($validation->hasError('email')) ? 'is-invalid' : '' ; ?>">
+                                        <input type="email" name="email" id="email" placeholder="Email" class="form-control mx-3 my-2<?= ($validation->hasError('email')) ? 'is-invalid' : '' ; ?>" required>
+                                        <div class="invalid-feedback mx-3 mb-1">
+                                            Masukan Email
+                                        </div>
                                     </div>
                                 </div>
-
-                                <p class="login">
-                                    <?= $validation->getError('email'); ?>
-                                </p>
 
                                 <div class="form-row justify-content-center">
                                     <div class="col-lg-8">
-                                        <input type="password" name="password" id="password" placeholder="Kata Sandi" class="form-control mx-3 mb-2 <?= ($validation->hasError('password')) ? 'is-invalid' : '' ; ?>">
+                                        <input type="password" name="password" id="password" placeholder="Kata Sandi" class="form-control mx-3 mb-2<?= ($validation->hasError('password')) ? 'is-invalid' : '' ; ?>" required>
+                                        <div class="invalid-feedback mx-3">
+                                            Masukan Kata Sandi
+                                        </div>
                                     </div>
                                 </div>
-
-                                <p class="login">
-                                    <?= $validation->getError('password'); ?>
-                                </p>
                                 
                                 <div class="form-row justify-content-center">
                                     <div class="col-lg-8">
@@ -89,6 +87,8 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="<?= base_url('/js/retina.min.js'); ?>"></script>
+    <script src="<?= base_url('/js/login.js'); ?>"></script>
    
 </body>
 </html>
