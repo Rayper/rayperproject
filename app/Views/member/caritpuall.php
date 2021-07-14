@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cari TPU Makam Covid</title>
+    <title>Cari TPU Makam Baru</title>
     <link rel="shortcut icon" href="/img/Favicon.ico">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
@@ -18,7 +18,7 @@
     
     <!-- Header -->
     <header class="text-left">
-            <h1>Cari TPU Makam Covid</h1>
+            <h1>Cari TPU Semua Kategori</h1>
     </header>
     <br>
 
@@ -47,7 +47,7 @@
     
     <!-- Main -->
     <main>
-    <section class="section-header-tpu" id="headerTPU">
+        <section class="section-header-tpu" id="headerTPU">
             <form action="" method = "get">
                 <div class="container">
                     <div class="row">
@@ -91,7 +91,7 @@
                                             <p class="text-center">Kategori : <?= $dt['nama'] ?></p>
                                             <p class="text-center">Hubungi   : <?= $dt['Contact'] ?></p>
                                             <a href="<?= $dt['Link'] ?>" class="text-center" target="_blank">Link Lokasi</a><br>
-                                            <a href="/member/pemesananmakamcovid/<?= $dt['tpu_id'] ?>" class="btn btn-full px-3 py-1 mt-3">Pesan</a>
+                                            <a href="/member/pemesananmakam/<?= $dt['tpu_id'] ?>" class="btn btn-full px-3 py-1 mt-3">Pesan</a>
                                         </div>
                                 </div>
                             </div>

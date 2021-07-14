@@ -10,15 +10,14 @@ class m_tpu extends Model
     protected $allowedFields = ['tpu_id', 'NamaTPU', 'AlamatTPU', 'Kategori_id ', 'Thumbnail', 'Unit', 'Contact', 'Link'];
 
 
-    // public function search($keyword)
-    // {
-    //     $builder = $this->table('tpu');
-    //     $builder->like('NamaTPU', $keyword);
-    //     // $builder->orLike('nama', $keyword);
-    //     $builder->orLike('unit', $keyword);
-    //     $builder->Where(['tpu.Kategori_id' => 1]);
-    //     return $builder;
-    // }
+    public function search($keyword)
+    {
+        $builder = $this->table('tpu');
+        $builder->like('NamaTPU', $keyword);
+        $builder->orLike('nama', $keyword);
+        $builder->orLike('unit', $keyword);
+        return $builder;
+    }
 
     // public function search2($keyword)
     // {

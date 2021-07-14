@@ -52,20 +52,34 @@
     
     <!-- Main -->
     <main>
-        <!-- <section class="section-header-tpu" id="headerTPU">
-                <form action="" method = "get">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-sm-2">
-                                <input class="form-control mr-5" type="search" placeholder="Cari TPU" name="keyword">
-                            </div>
-                            <div class="col-lg-sm-2">
-                                <button type="submit" name="submit" class="btn btn-search">Cari</button>
+    <section class="section-header-tpu" id="headerTPU">
+            <form action="" method = "get">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-sm-2">
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown">
+                                    Cari TPU Perkategori
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                    <a href="/Member/caritpuall" class="dropdown-item">TPU Semua Kategori</a>
+                                    <a href="/Member/caritpu" class="dropdown-item">TPU Makam Baru</a>
+                                    <a href="/Member/caritpu3" class="dropdown-item">TPU Covid</a>
+                                    <a href="/Member/caritpu2" class="dropdown-item">TPU Tumpang Tindih</a>
+                                </div>
                             </div>
                         </div>
+                        <div class="col-lg-sm-2">
+                            <input class="form-control mr-5" type="search" placeholder="Nama TPU/unit" name="keyword">
+                        </div>
+                        <div class="col-lg-sm-2">
+                            <button type="submit" name="submit" class="btn btn-search">Cari</button>
+                        </div>
+                        
                     </div>
-                </form>
-        </section> -->
+                </div>
+            </form>
+        </section>
         <br>
         <section class="section-card-tpu" id="cardTPU">
                 <div class="container">
