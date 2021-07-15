@@ -1,6 +1,6 @@
 <div class="container sticky-top">
         <nav class="row navbar navbar-expand-lg navbar-light bg-white">
-            <a href="/member/home" class="navbar-brand">
+            <a href="/Member/home" class="navbar-brand">
                 <img src="/img/Logo Kober V1.png" alt="Logo KOBER">
             </a>
 
