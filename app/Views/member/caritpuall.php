@@ -18,7 +18,7 @@
     
     <!-- Header -->
     <header class="text-left">
-            <h1>Cari TPU Semua Kategori</h1>
+            <h1>TPU Semua Kategori</h1>
     </header>
     <br>
 
@@ -79,15 +79,9 @@
             <form action="" method = "get">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-sm-2">
-                            <input class="form-control mr-5" type="search" placeholder="Nama TPU/unit" name="keyword">
-                        </div>
-                        <div class="col-lg-sm-2">
-                            <button type="submit" name="submit" class="btn btn-search">Cari</button>
-                        </div>
-                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                        <div class="col-lg-2 mt-5">
                             <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown">
-                                Cari TPU Perkategori
+                                Cari TPU Per-kategori
                             </button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
                                 <a href="/Member/caritpuall" class="dropdown-item">TPU Semua Kategori</a>
@@ -95,6 +89,12 @@
                                 <a href="/Member/caritpu3" class="dropdown-item">TPU Makam Covid</a>
                                 <a href="/Member/caritpu2" class="dropdown-item">TPU Tumpang Tindih</a>
                             </div>
+                        </div>
+                        <div class="col-lg-sm-2 mt-2">
+                            <input class="form-control mr-5" type="search" placeholder="Nama TPU/unit" name="keyword">
+                        </div>
+                        <div class="col-lg-sm-2 mt-2">
+                            <button type="submit" name="submit" class="btn btn-search">Cari</button>
                         </div>
                     </div>
                 </div>
