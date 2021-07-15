@@ -21,7 +21,7 @@
                     <img src="/img/Login Image.jpg" alt="image" class="img-fluid">
                 </div>
                 <div class="col-lg-6 px-5 pt-5 justify-content-center">
-                    <form method="post" action="<?= site_url('Member/updateprofile') ?>">
+                    <form method="post" action="<?= site_url('Member/updateprofile') ?>" class="needs-validation" novalidate>
                     <?= csrf_field();?>
                         <div class="form-row justify-content-center">
                             <div class="col-lg-8">
@@ -39,58 +39,51 @@
                         <br>
                         <div class="form-row justify-content-center">
                             <div class="col-lg-8">
-                            <input type="text" name="fullname" placeholder="Nama Pengguna" class="form-control mx-3 mb-2 <?= ($validation->hasError('fullname')) ? 'is-invalid' : '' ; ?>" value="<?= session()->get('fullname'); ?>" readonly>
+                                <input type="text" name="fullname" placeholder="Nama Pengguna" class="form-control mx-3 mb-1<?= ($validation->hasError('fullname')) ? 'is-invalid' : '' ; ?>" value="<?= session()->get('fullname'); ?>" readonly>
                             </div>
                         </div>
 
-                        <p>
-                            <?= $validation->getError('fullname'); ?>
-                        </p>
-
                         <div class="form-row justify-content-center">
                             <div class="col-lg-8">
-                            <input type="email" name="email" placeholder="Email" class="form-control mx-3 mb-2" <?= ($validation->hasError('email')) ? 'is-invalid' : '' ; ?>" value="<?= old('email'); ?>">
+                                <input type="email" name="email" placeholder="Email" class="form-control mx-3 mb-1"<?= ($validation->hasError('email')) ? 'is-invalid' : '' ; ?>" value="<?= old('email'); ?>" required>
+                                <div class="invalid-feedback mx-3">
+                                    Masukan Email
+                                </div>
                             </div>
                         </div>
 
-                        <p>
-                            <?= $validation->getError('email'); ?>
-                        </p>
-
                         <div class="form-row justify-content-center">
                             <div class="col-lg-8">
-                            <input type="text" name="phonenumber" placeholder="Nomor Handphone" class="form-control mx-3 mb-2<?= ($validation->hasError('phonenumber')) ? 'is-invalid' : '' ; ?> " value="<?= old('phonenumber'); ?>" >
+                                <input type="text" name="phonenumber" placeholder="Nomor Handphone" class="form-control mx-3 mb-1<?= ($validation->hasError('phonenumber')) ? 'is-invalid' : '' ; ?> " value="<?= old('phonenumber'); ?>" required>
+                                <div class="invalid-feedback mx-3">
+                                    Masukan Nomor Handphone
+                                </div>
                             </div>
                         </div>
 
-                        <p>
-                            <?= $validation->getError('phonenumber'); ?>
-                        </p>
-
                         <div class="form-row justify-content-center">
                             <div class="col-lg-8">
-                            <input type="password" name="password" placeholder="Kata Sandi" class="form-control  mx-3 mb-2<?= ($validation->hasError('password')) ? 'is-invalid' : '' ; ?>">
+                                <input type="password" name="password" placeholder="Kata Sandi" class="form-control mx-3 mb-1<?= ($validation->hasError('password')) ? 'is-invalid' : '' ; ?>" required>
+                                <div class="invalid-feedback mx-3">
+                                    Masukan Kata Sandi
+                                </div>
                             </div>
                         </div>
 
-                        <p>
-                            <?= $validation->getError('phonenumber'); ?>
-                        </p>
-
                         <div class="form-row justify-content-center">
                             <div class="col-lg-8">
-                            <input type="password" name="confirmpw" placeholder="Konfirmasi Kata Sandi" class="form-control  mx-3 mb-2<?= ($validation->hasError('confirmpw')) ? 'is-invalid' : '' ; ?>">
+                                <input type="password" name="confirmpw" placeholder="Konfirmasi Kata Sandi" class="form-control mx-3 mb-1<?= ($validation->hasError('confirmpw')) ? 'is-invalid' : '' ; ?>" required>
+                                <div class="invalid-feedback mx-3">
+                                    Masukan Konfirmasi Kata Sandi
+                                </div>
                             </div>
                         </div>
 
-                        <p>
-                            <?= $validation->getError('phonenumber'); ?>
-                        </p>
-
                         <div class="form-row justify-content-center">
                             <div class="col-lg-8">
-                                <button type="submit" class="btn btn-register mx-3 my-2" onClick="return sukses()">Ubah</button>
+                                <button type="submit" class="btn btn-register mx-3 my-2">Ubah</button>
                             </div>
+                        </div>
                         </div>
                     </form>
                 </div>
@@ -118,7 +111,8 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-
+    <script src="<?= base_url('/js/retina.min.js'); ?>"></script>
+    <script src="<?= base_url('/js/updateprofile.js'); ?>"></script>
 </body>
 </html>
 

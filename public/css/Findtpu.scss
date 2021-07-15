@@ -62,6 +62,10 @@ a.caritpu{
     color: #ffffff;
   }
   
+  .open>.dropdown-menu {
+    min-width: 100%;
+}
+  
   .secondary.dropdown-toggle {
     color: #fff;
     background-color: #9FD438;

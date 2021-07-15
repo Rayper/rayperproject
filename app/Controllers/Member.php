@@ -52,13 +52,31 @@ class Member extends BaseController
         echo view('member/caritpu',$data);
     }
 
+    public function caritpuall()
+    {
+        $keyword = $this->request->getVar('keyword');
+
+        if($keyword)
+        {
+            $tpu = $this->m_tpu->search($keyword);
+        }
+        else{
+            $tpu = $this->m_tpu;
+        }
+
+        $paginate = 6;
+        $data['datatpus']   = $this->m_tpu->join('kategori ', 'tpu.Kategori_id = kategori.Kategori_id')->paginate($paginate, 'datatpu');
+        $data['pager']      = $this->m_tpu->pager;
+        echo view('member/caritpuall',$data);
+    }
+
     public function caritpu2()
     {
         $keyword = $this->request->getVar('keyword');
 
         if($keyword)
         {
-            $tpu = $this->m_tpu->search2($keyword);
+            $tpu = $this->m_tpu->search($keyword);
         }
         else{
             $tpu = $this->m_tpu;
@@ -76,7 +94,7 @@ class Member extends BaseController
 
         if($keyword)
         {
-            $tpu = $this->m_tpu->search3($keyword);
+            $tpu = $this->m_tpu->search($keyword);
         }
         else{
             $tpu = $this->m_tpu;
