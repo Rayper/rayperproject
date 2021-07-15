@@ -44,6 +44,34 @@
             </div>
         </div>
     </form>
+
+    <!-- Modal Tumpang Tindih-->
+    <div class="modal fade" id="tumpangModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Info Tumpang Tindih</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                TPU ini sudah tidak menerima lahan pemakaman baru, karena keterbatasan lahan. TPU ini menerapkan
+                sistem tumpang tindih dimana satu petak lahan hanya bisa diisi oleh beberapa orang dan harus melampirkan
+                surat pernyataan tumpang tindih, yang mana surat tersebut berisi kesepakatan kedua belah pihak antara
+                pihak yang mengajukan untuk tumpang tindih dengan pihak yang bersedia lahan makamnya untuk dilakukan tumpang tindih
+                apakah anda bersedia untuk itu ?
+                <br>
+                <br>
+                Jika bersedia, maka terdapat nomor telepon (Contact Person) dari pihak TPU terkait yang sudah tertera, 
+                anda bisa langsung hubungi untuk keteranngan dan proses lebih lanjut, terima kasih :)
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Oke</button>
+            </div>
+            </div>
+        </div>
+    </div>
     
     <!-- Main -->
     <main>
@@ -52,25 +80,22 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-sm-2">
-                            <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown">
-                                    Cari TPU Perkategori
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                                    <a href="/Member/caritpuall" class="dropdown-item">TPU Semua Kategori</a>
-                                    <a href="/Member/caritpu" class="dropdown-item">TPU Makam Baru</a>
-                                    <a href="/Member/caritpu3" class="dropdown-item">TPU Covid</a>
-                                    <a href="/Member/caritpu2" class="dropdown-item">TPU Tumpang Tindih</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-sm-2">
                             <input class="form-control mr-5" type="search" placeholder="Nama TPU/unit" name="keyword">
                         </div>
                         <div class="col-lg-sm-2">
                             <button type="submit" name="submit" class="btn btn-search">Cari</button>
                         </div>
-                        
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown">
+                                Cari TPU Perkategori
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                <a href="/Member/caritpuall" class="dropdown-item">TPU Semua Kategori</a>
+                                <a href="/Member/caritpu" class="dropdown-item">TPU Makam Baru</a>
+                                <a href="/Member/caritpu3" class="dropdown-item">TPU Makam Covid</a>
+                                <a href="/Member/caritpu2" class="dropdown-item">TPU Tumpang Tindih</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </form>
@@ -91,7 +116,13 @@
                                             <p class="text-center">Kategori : <?= $dt['nama'] ?></p>
                                             <p class="text-center">Hubungi   : <?= $dt['Contact'] ?></p>
                                             <a href="<?= $dt['Link'] ?>" class="text-center" target="_blank">Link Lokasi</a><br>
-                                            <a href="/member/pemesananmakam/<?= $dt['tpu_id'] ?>" class="btn btn-full px-3 py-1 mt-3">Pesan</a>
+                                            <?php if($dt['nama'] == 'Tumpang Tindih') : ?>
+                                                <button class="btn btn-full px-3 py-1 mt-3" data-toggle="modal" data-target="#tumpangModal">Pesan</button>
+                                            <?php elseif($dt['nama'] == 'Makam Covid') : ?>
+                                                <a href="/member/pemesananmakamcovid/<?= $dt['tpu_id'] ?>" class="btn btn-full px-3 py-1 mt-3">Pesan</a>
+                                            <?php else : ?>
+                                                <a href="/member/pemesananmakam/<?= $dt['tpu_id'] ?>" class="btn btn-full px-3 py-1 mt-3">Pesan</a>
+                                            <?php endif?>
                                         </div>
                                 </div>
                             </div>

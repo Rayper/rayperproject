@@ -1,4 +1,4 @@
-<div class="container sticky-top">
+<div class="container">
         <nav class="row navbar navbar-expand-lg navbar-light bg-white">
             <a href="/member/home" class="navbar-brand">
                 <img src="/img/Logo Kober V1.png" alt="Logo KOBER">
@@ -40,7 +40,7 @@
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
                     
-                        <a href="updateprofilepage"><button class="dropdown-item" type="button">Edit Profil</button></a>
+                        <a href="/member/updateprofilepage"><button class="dropdown-item" type="button">Edit Profil</button></a>
                         <a href="/auth/logout"><button class="dropdown-item" type="button">Keluar</button></a>
                     </div>
                 </div>
