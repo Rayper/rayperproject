@@ -27,11 +27,15 @@ class Member extends BaseController
         $this->m_pemesanan = new m_pemesanan();
         $this->m_berita = new m_berita();
         $this->m_feedback = new m_feedback();
+        $uri = new \CodeIgniter\HTTP\URI();
+        $uri = service('uri');
+
 
         helper('form');
         helper('number');
         helper('date');
         helper('session');
+        
     }
     
     public function caritpu()
@@ -141,6 +145,8 @@ class Member extends BaseController
 
     public function Home()
     {
+        $uri = service('uri');
+
         return view('member/Home');
     }
 
