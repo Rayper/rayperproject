@@ -4,23 +4,12 @@ body {
   scroll-behavior: smooth;
 }
 
-a.caritpu {
-  font-family: 'Merriweather', serif;
-  color: #92B74B;
-  float: left;
-  display: block;
-  padding: 5px 5px;
-  text-decoration: none;
-  border-bottom: 3px solid transparent;
-  font-size: 15px;
-}
-
 .navbar .navbar-nav .nav-link {
   font-family: 'Merriweather', serif;
   color: #92B74B;
   float: left;
   display: block;
-  padding: 5px 5px;
+  padding: 14px 16px;
   text-decoration: none;
   border-bottom: 3px solid transparent;
 }
