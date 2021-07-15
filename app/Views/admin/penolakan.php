@@ -15,7 +15,7 @@
 </head>
 <body>
     <!-- navbar -->
-    <?= $this->include('templates/navbarUser'); ?>
+    <?= $this->include('templates/navbarAdmin'); ?>
 
     <!-- Modal -->
     <form action="<?= site_url('Member/cekbukti') ?>" method="post">
@@ -75,7 +75,7 @@
         </main>
 
     <!-- Footer -->
-    <?= $this->include('templates/footer'); ?>
+    <?= $this->include('templates/footercek'); ?>
 
     <script>
 	function sukses()
