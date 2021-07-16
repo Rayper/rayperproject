@@ -67,7 +67,7 @@
                     <?php foreach ($databerita as $dt) : ?>
                     <div class="col-sm-5 col-md-4 col-lg-3 my-3 mx-4">
                         <div class="card h-100" style="width: 18rem;">
-                            <a href="/member/detailberita/<?= $dt['berita_id'] ?>" class="btn btn-feature">
+                            <a href="/guest/detailberita/<?= $dt['berita_id'] ?>" class="btn btn-feature">
                                 <!-- Class Admin -->
                                 <div class="media py-2">
                                     <img src="/img/User.png" alt="Icon User">
