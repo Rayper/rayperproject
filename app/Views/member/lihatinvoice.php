@@ -48,12 +48,6 @@
         </div>
     </form>
 
-    <!-- Header -->
-    <header class="text-left">
-        <h1>Lihat Invoice</h1>
-    </header>
-    <br>
-
     <!-- Main -->
     <main>
         <section class="table-info-pemesanan">
@@ -68,8 +62,8 @@
                                 <th scope="col">Cek Pembayaran</th>
                                 <th scope="col">Cek Invoice</th>
                             </tr>
-                        </thead>
-                        <tbody>
+                            </thead>
+                            <tbody>                           
                             <?php foreach ($datainvoice as $dt) : ?>
                             <tr>
                                 <?php

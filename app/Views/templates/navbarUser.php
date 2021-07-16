@@ -38,5 +38,10 @@
                         <a href="/auth/logout"><button class="dropdown-item" type="button">Keluar</button></a>
                     </div>
                 </div>
+<<<<<<< HEAD
+        </nav>
+    </div>
+=======
     </nav>
 </div>
+>>>>>>> b019f1ec87baa8e08ab18b178ffdbaab438bea14

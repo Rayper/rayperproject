@@ -79,7 +79,7 @@
                             </div>
                         </div>
                         <div class="col-lg-sm-2 mt-2">
-                            <input class="form-control mr-5" type="search" placeholder="Nama TPU/unit" name="keyword">
+                            <input class="form-control mr-5" type="search" placeholder="Nama TPU/Unit" name="keyword">
                         </div>
                         <div class="col-lg-sm-2 mt-2">
                             <button type="submit" name="submit" class="btn btn-search">Cari</button>
