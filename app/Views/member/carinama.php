@@ -38,12 +38,6 @@
             </div>
         </div>
     </form>
-    
-    <!-- Header -->
-    <header class="text-left">
-            <h1>Cari Nama</h1>
-    </header>
-    <br>
 
     <!-- Main -->
         <main>
