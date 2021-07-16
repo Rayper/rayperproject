@@ -38,36 +38,38 @@ p.judul{
 //Navbar
 .navbar{
     .navbar-nav{
-        .nav-link{
-            font-family: 'Merriweather', serif;
-            color: #92B74B;
-            float: left;
-            display: block;
-            padding: 14px 16px;
-            text-decoration: none;
-            border-bottom: 3px solid transparent;
-
-
-            &:hover{
-                color: #92B74B;
-                font-family: 'Merriweather', serif;
-                border-bottom: 3px solid #92B74B;
-            }
-
-            &.active{
-                color: #92B74B;
-                font-family: 'Merriweather', serif;
-                font-weight: bolder;
-                border-bottom: 3px solid #92B74B;
+        .navbar-brand{
+            img{
+                max-height: 40px;
             }
         }
-    }
-}
 
-.navbar-brand{
-    img{
-        max-height: 40px;
+        .text{
+            color: #92B74B;
+            font-family: 'Merriweather', serif;
+            font-size: 15px;
+        }
     }
+
+    .dropdown{
+        .btn-login{
+          background-color: #92B74B;
+          font-family: 'Merriweather', serif;
+          color: #ffffff;
+      
+          &:hover{
+            background-color: #9FD438;
+            color: #ffffff;
+          }
+        }
+    
+        .dropdown-menu{
+          a{
+            font-family: 'Merriweather', serif;
+          }
+        }
+    }
+    
 }
 
 .btn-login{

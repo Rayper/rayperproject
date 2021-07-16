@@ -9,14 +9,7 @@
                     <li>Email : support@kober.id</li>
                 </ul>
             </div>
-            <div class="col-lg-3">
-                <h4 class="heading-feedback">Berikan Feedback Anda</h4>
-                <a href="/auth/login" class="btn btn btn-feedback px-4 py-2 ml-5">
-                    Kirim Feedback
-                </a>
-            </div>
         </div>
-
     </div>
     <div class="container-fluid">
         <div class="row border-top">

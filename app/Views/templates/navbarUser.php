@@ -1,39 +1,34 @@
 <div class="container sticky-top">
-        <nav class="row navbar navbar-expand-lg navbar-light bg-white">
-            <a href="/Member/home" class="navbar-brand">
-                <img src="/img/Logo Kober V1.png" alt="Logo KOBER">
-            </a>
+    <nav class="row navbar navbar-expand-lg navbar-light bg-white">
+        <a href="/Member/home" class="navbar-brand">
+            <img src="/img/Logo Kober V1.png" alt="Logo KOBER">
+        </a>
 
-            <button 
-                class="navbar-toggler navbar-toggler-right"
-                type="button"
-                data-toggle="collapse"
-                data-target="#navb"
-            >
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navb">
-                <ul class="navbar-nav ml-auto mr-3">
-                    <li class="nav-item mx-md-2">
-                        <a href="/Member/caritpuall" class="nav-link">Cari TPU</a>
-                    </li>
-                    <li class="nav-item mx-md-2">
-                        <a href="/Member/carinama" class="nav-link">Cari Nama</a>
-                    </li>
-                    <li class="nav-item mx-md-2">
-                        <a href="/Member/lihatinvoice" class="nav-link">Info Pemesanan</a>
-                    </li>
-                    <li class="nav-item mx-md-2">
-                        <a href="/Member/liatberita" class="nav-link">Berita</a>
-                    </li>
-                    <li class="nav-item mx-md-2">
-                        <a href="/Member/tentangkami" class="nav-link">Tentang Kami</a>
-                    </li>
-                    <li class="nav-item mx-md-2">
-                        <a href="/Member/faq" class="nav-link">FAQ</a>
-                    </li>
-                </ul>
-                <span class="navbar-text-right">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navb">
+            <ul class="navbar-nav ml-auto mr-3">
+                <li class="nav-item mx-md-2">
+                    <a href="/Member/caritpuall" class="nav-link">Cari TPU</a>
+                </li>
+                <li class="nav-item mx-md-2">
+                    <a href="/Member/carinama" class="nav-link">Cari Nama</a>
+                </li>
+                <li class="nav-item mx-md-2">
+                    <a href="/Member/lihatinvoice" class="nav-link">Info Pemesanan</a>
+                </li>
+                <li class="nav-item mx-md-2">
+                    <a href="/Member/liatberita" class="nav-link">Berita</a>
+                </li>
+                <li class="nav-item mx-md-2">
+                    <a href="/Member/tentangkami" class="nav-link">Tentang Kami</a>
+                </li>
+                <li class="nav-item mx-md-2">
+                    <a href="/Member/faq" class="nav-link">FAQ</a>
+                </li>
+            </ul>
+            <span class="navbar-text-right">
                 <div class="dropdown">
                     <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown">
                         <?= session()->get('fullname'); ?>
@@ -43,5 +38,10 @@
                         <a href="/auth/logout"><button class="dropdown-item" type="button">Keluar</button></a>
                     </div>
                 </div>
+<<<<<<< HEAD
         </nav>
     </div>
+=======
+    </nav>
+</div>
+>>>>>>> b019f1ec87baa8e08ab18b178ffdbaab438bea14
