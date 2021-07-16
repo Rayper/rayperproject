@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Faq</title>
+  <title>FAQ</title>
   <link rel="shortcut icon" href="/img/Favicon.ico">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
     integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
@@ -53,7 +53,7 @@
         <div class="row">
           <div class="col-sm-3 section-faq-title">
             <h2>FAQ</h2>
-            <p>Tanya Jawab Yang Sering Diajukan</p>
+            <p>Pertanyaan Yang Sering Diajukan</p>
           </div>
           <div class="col-sm-9 section-faq-content pl-0">
             <div class="accordion" id="accordionFaq">
@@ -68,7 +68,7 @@
                   </h2>
                 </div>
 
-                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionFaq">
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionFaq">
                   <div class="card-body">
                     Memudahkan masyarakat untuk melakukan pemesanan makam secara online, serta menyajikan informasi
                     TPU secara detail, update, dan kredibel dalam satu website.
