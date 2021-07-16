@@ -32,7 +32,7 @@
                         <nav>
                             <ol class="breadcrumb pt">
                                 <li class="breadcrumb-item">
-                                    <a href="/member/liatberita" style="color: #EEF3EF;">Berita</a>
+                                    <a href="/Guest/liatberita" style="color: #EEF3EF;">Berita</a>
                                 </li>
                                 <li class="breadcrumb-item active">
                                     Detail Berita

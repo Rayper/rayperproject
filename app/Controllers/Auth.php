@@ -134,9 +134,9 @@ class Auth extends BaseController
                 'rules' => 'required|min_length[8]|max_length[20]|matches[confirmpw]',
 
                 'errors' => [
-                    'required'              => 'Password wajib diisi',
-                    'min_length'            => 'Password minimal terdiri dari 8 karakter',
-                    'max_length'            => 'Password maksimal terdiri dari 20 karakter',
+                    'required'              => 'Kata Sandi wajib diisi',
+                    'min_length'            => 'Kata Sandi minimal terdiri dari 8 karakter',
+                    'max_length'            => 'Kata Sandi maksimal terdiri dari 20 karakter',
                     'matches'               => 'Harus sama dengan Konfirmasi Password'
                 ]
             ],
@@ -144,10 +144,10 @@ class Auth extends BaseController
                 'rules' => 'required|min_length[8]|max_length[20]|matches[password]',
                 
                 'errors' => [
-                    'required'              => 'Konfirmasi Password wajib diisi',
-                    'min_length'            => 'Konfirmasi Password minimal terdiri dari 8 karakter',
-                    'max_length'            => 'Konfirmasi Password maksimal terdiri dari 20 karakter',
-                    'matches'               => 'Harus sama dengan Password'
+                    'required'              => 'Konfirmasi Kata Sandi wajib diisi',
+                    'min_length'            => 'Konfirmasi Kata Sandi minimal terdiri dari 8 karakter',
+                    'max_length'            => 'Konfirmasi Kata Sandi maksimal terdiri dari 20 karakter',
+                    'matches'               => 'Harus sesuai dengan Kata Sandi'
                 ]
             ]
         ])){
