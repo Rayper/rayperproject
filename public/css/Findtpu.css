@@ -28,9 +28,8 @@ body {
 }
 
 .btn-secondary {
-  color: #ffffff;
   background-color: #92B74B;
-  font-family: 'Merriweather', serif;
+  color: #ffffff;
 }
 
 .btn-secondary:hover {
@@ -46,10 +45,6 @@ body {
 .show > .btn-secondary.dropdown-toggle {
   background-color: #92B74B;
   color: #ffffff;
-}
-
-.open > .dropdown-menu {
-  min-width: 100%;
 }
 
 .secondary.dropdown-toggle {
@@ -72,6 +67,14 @@ h1 {
   font-weight: bold;
   font-style: italic;
   font-size: 30px;
+}
+
+h1.kosong {
+  font-family: 'Merriweather', serif;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 30px;
+  color: red;
 }
 
 .section-header-tpu .container .row .custom-select {
