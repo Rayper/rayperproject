@@ -28,6 +28,13 @@ body {
   width: 100%;
 }
 
+.validasiregist {
+  width: 100%;
+  font-size: 80%;
+  color: #dc3545;
+  margin-left: 97px;
+}
+
 .img-logo {
   max-width: 300px;
   max-height: 70px;

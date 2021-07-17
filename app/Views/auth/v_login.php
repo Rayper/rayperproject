@@ -35,7 +35,7 @@
                                     </div>
                                 </div>
                                 <div class="form-row justify-content-center">
-                                    <div class="col-lg-8">
+                                    <div class="col-lg-7">
                                         <?php if(session()->getFlashdata('msg')):?>
                                             <div class="alert alert-danger" role="alert">
                                                 <?= session()->getFlashdata('msg') ?>

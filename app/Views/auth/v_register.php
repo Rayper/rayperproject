@@ -55,6 +55,10 @@
                             </div>
                         </div>
 
+                        <div class="validasiregist">
+                            <?= $validation->getError('fullname'); ?>
+                        </div>
+
                         <div class="form-row justify-content-center">
                             <div class="col-lg-8">
                                 <input type="email" name="email" placeholder="Email" class="form-control mx-3 mb-1"
@@ -64,6 +68,10 @@
                                     Masukan Email
                                 </div>
                             </div>
+                        </div>
+
+                        <div class="validasiregist">
+                            <?= $validation->getError('email'); ?>
                         </div>
 
                         <div class="form-row justify-content-center">
@@ -77,6 +85,11 @@
                             </div>
                         </div>
 
+                        <div class="validasiregist">
+                            <?= $validation->getError('phonenumber'); ?>
+                        </div>
+
+
                         <div class="form-row justify-content-center">
                             <div class="col-lg-8">
                                 <input type="password" name="password" placeholder="Kata Sandi"
@@ -88,6 +101,10 @@
                             </div>
                         </div>
 
+                        <div class="validasiregist">
+                            <?= $validation->getError('password'); ?>
+                        </div>
+
                         <div class="form-row justify-content-center">
                             <div class="col-lg-8">
                                 <input type="password" name="confirmpw" placeholder="Konfirmasi Kata Sandi"
@@ -97,6 +114,10 @@
                                     Masukan Konfirmasi Kata Sandi
                                 </div>
                             </div>
+                        </div>
+
+                        <div class="validasiregist">
+                            <?= $validation->getError('confirmpw'); ?>
                         </div>
 
                         <div class="form-row justify-content-center">

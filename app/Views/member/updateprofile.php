@@ -64,6 +64,10 @@
                             </div>
                         </div>
 
+                        <div class="validasiregist">
+                            <?= $validation->getError('email'); ?>
+                        </div>
+
                         <div class="form-row justify-content-center">
                             <div class="col-lg-8">
                                 <input type="text" name="phonenumber" placeholder="Nomor Handphone"
@@ -73,6 +77,10 @@
                                     Masukan Nomor Handphone
                                 </div>
                             </div>
+                        </div>
+
+                        <div class="validasiregist">
+                            <?= $validation->getError('phonenumber'); ?>
                         </div>
 
                         <div class="form-row justify-content-center">
@@ -86,6 +94,10 @@
                             </div>
                         </div>
 
+                        <div class="validasiregist">
+                            <?= $validation->getError('password'); ?>
+                        </div>
+
                         <div class="form-row justify-content-center">
                             <div class="col-lg-8">
                                 <input type="password" name="confirmpw" placeholder="Konfirmasi Kata Sandi"
@@ -95,6 +107,10 @@
                                     Masukan Konfirmasi Kata Sandi
                                 </div>
                             </div>
+                        </div>
+
+                        <div class="validasiregist">
+                            <?= $validation->getError('confirmpw'); ?>
                         </div>
 
                         <div class="form-row justify-content-center">
