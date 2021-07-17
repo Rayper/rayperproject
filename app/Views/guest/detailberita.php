@@ -62,7 +62,7 @@
                 </div>
                 <p class="my-3"><?= $detailberita['Isi']; ?></p>
                 <br>
-                <a href="/member/liatberita">
+                <a href="/Guest/liatberita">
                     << Kembali ke Halaman Berita</a> </div> </section> </main> <!-- Footer -->
                         <?= $this->include('templates/footerguest'); ?>
 
