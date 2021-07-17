@@ -45,8 +45,7 @@
                                 <th scope="col">Harga</th>
                                 <th scope="col">Jenis Pemakaman</th>
                                 <th scope="col">Status Pembayaran</th>
-                                <th scope="col">Konfirmasi</th>
-                                <th scope="col">Tolak</th>
+                                <th scope="col">Aksi</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -66,22 +65,33 @@
                                 <td><?= $dt['Harga'] ?></td>
                                 <td><?= $dt['KategoriTPU'] ?></td>
                                 <td><?= $dt['ket'] ?></td>
+                                <?php if($dt['ket'] == 'Lunas') : ?>
+                                <td><button class="btn btn-success btn-sm">Pembayaran Diterima</button></td>
+                                <?php elseif($dt['ket'] == 'Ditolak') : ?>
+                                <td><button class="btn btn-danger btn-sm px-3">Pemesanan Ditolak</button></td>
+                                <?php else : ?>
                                 <td>
-                                    <a href="/admin/cekbukti/<?= $dt['invoice_id'] ?>"
-                                        class="btn btn-secondary btn-sm px-3">Aksi</a>
+                                    <div class="btn-group" role="group">
+                                        <div class="col-md-6 custom">
+                                            <a href="/admin/cekbukti/<?= $dt['invoice_id'] ?>"
+                                                class="btn btn-secondary">Konfirmasi</a>
+                                        </div>
+                                        <div class="col-md-6 custom">
+                                            <a href="/admin/penolakan/<?= $dt['invoice_id'] ?>"
+                                                class="btn btn-danger ">Tolak</a></div>
+                                    </div>
                                 </td>
-                                <td>
-                                    <a href="/admin/penolakan/<?= $dt['invoice_id'] ?>" class="btn btn-danger ">Aksi</a>
-                                </td>
-                            </tr>
-                            <?php endforeach; ?>
-                        </tbody>
-                    </table>
                 </div>
-                <br>
-                <div class="pagination justify-content-center mt-4">
-                    <?php echo $pager->links('datainvoice', 'bootstrap_pagination') ?>
-                </div>
+                <?php endif; ?>
+                </tr>
+                <?php endforeach; ?>
+                </tbody>
+                </table>
+            </div>
+            <br>
+            <div class="pagination justify-content-center mt-4">
+                <?php echo $pager->links('datainvoice', 'bootstrap_pagination') ?>
+            </div>
             </div>
         </section>
     </main>

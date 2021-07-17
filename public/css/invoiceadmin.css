@@ -47,7 +47,9 @@ body {
   color: #ffffff;
 }
 
-.btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show > .btn-secondary.dropdown-toggle {
+.btn-secondary:not(:disabled):not(.disabled).active,
+.btn-secondary:not(:disabled):not(.disabled):active,
+.show > .btn-secondary.dropdown-toggle {
   color: #fff;
   background-color: #9FD438;
 }
@@ -56,17 +58,11 @@ body {
   background-color: #92B74B;
   font-family: 'Merriweather', serif;
   color: #ffffff;
+  text-align: center;
 }
 
-.table-invoice-admin button {
-  color: #ffffff;
-  background-color: #FF0000;
-  font-family: 'Merriweather', serif;
-}
-
-.table-invoice-admin button:hover {
-  color: #ffffff;
-  background-color: #FF7272;
+.table-invoice-admin tbody td {
+  text-align: center;
 }
 
 .section-footer-admin h1 {
