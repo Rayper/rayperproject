@@ -184,11 +184,11 @@
                                 setelah itu klik pesan untuk melanjutkan ke prosedur selanjutnya.</p>
                             <p class="body-disclaimer">* Terdapat 3 metode untuk pemakaman:
                                 <br>
-                                1. Lahan Makam Baru
+                                1. Makam Baru
                                 <br>
-                                2. Tumpang Tindih
+                                2. Makam Covid
                                 <br>
-                                3. Covid-19</p>
+                                3. Tumpang Tindih</p>
                         </div>
                     </li>
 
@@ -223,12 +223,14 @@
                                 <br>
                                 - Invoice: Klik detail, untuk melihat invoice / IPTM pemesanan anda, lanjut melakukan pembayaran sesuai harga yang tertera.  
                                 <br> 
-                                - Pembayaran: Klik upload bukti pembayaran, untuk mengunngah bukti pembayaran.
+                                - Pembayaran: Klik upload bukti pembayaran, untuk mengunggah bukti pembayaran.
                                 <br>
                                 <br>
                                 Terakhir jika sudah melakukan langkah diatas, anda diminta untuk menunggu konfirmasi dari admin. Jika status pembayaran sudah lunas,
                                 selamat anda telah menyelesaikan pemesanan pemakaman secara online simpan dan tunjukan invoice atau IPTM kepada pihak TPU yang
-                                terkait !</p>
+                                terkait !
+                            </p>
+                            <p class="body-disclaimer">* Jika ada kendala pada saat pemesanan maupun pembayaran segera hubungi kami!</p>
                             <a href="/Member/faq" class="btn btn-faq px-4 py-2">
                                 Lihat FAQ
                             </a>
