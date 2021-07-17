@@ -4,7 +4,7 @@ body {
   scroll-behavior: smooth;
 }
 
-.navbar .navbar-nav a {
+.navbar .navbar-nav .nav-link {
   font-family: 'Merriweather', serif;
   color: #92B74B;
   float: left;
@@ -14,13 +14,13 @@ body {
   border-bottom: 3px solid transparent;
 }
 
-.navbar .navbar-nav a:hover {
+.navbar .navbar-nav .nav-link:hover {
   color: #92B74B;
   font-family: 'Merriweather', serif;
   border-bottom: 3px solid #92B74B;
 }
 
-.navbar .navbar-nav a.active {
+.navbar .navbar-nav .nav-link.active {
   color: #92B74B;
   font-family: 'Merriweather', serif;
   font-weight: bolder;

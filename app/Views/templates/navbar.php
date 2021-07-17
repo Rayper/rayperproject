@@ -32,16 +32,16 @@
 
             <!-- Mobile Button -->
             <form class="form-inline d-sm-block d-md-none">
-                <button class="btn btn-login my-2 my-sm-0">
-                    Masuk
-                </button>
+                <a href="/auth/login" class="btn btn-login my-2 my-sm-0">
+                        Masuk
+                </a>
             </form>
 
             <!-- Desktop Button -->
             <form class="form-inline my-2 my-lg-0 d-none d-md-block">
-                <button class="btn btn-login btn-navbar-right my-2 my-sm-0 px-4">
-                    <a style="color:white;" href="/auth/login">Masuk</a>
-                </button>
+                <a href="/auth/login" class="btn btn-login btn-navbar-right my-2 my-sm-0 px-4">
+                    Masuk
+                </a>
             </form>
 
         </div>

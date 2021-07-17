@@ -194,11 +194,17 @@
                             <h2 class="body-number">Langkah 4</h2>
                             <h2 class="body-heading">Mendapatkan Invoice Pemesanan / Izin Penggunaan Tanah Makam (IPTM)
                             </h2>
-                            <p class="body-description">Setelah mengisi form pemesanan anda diarahkan ke halaman info pemesanan, 
-                                di info pemesanan tersebut anda diminta untuk mengunggah bukti pembayaran, setelah anda mengunggah bukti pembayaran anda diminta
-                                untuk menunggu konfirmasi dari admin. Untuk melihat invoice atau IPTM dari pemesanan anda, klik tombol detail pada kolom cek invoice. 
-                                Didalam invoice tersebut anda dapat melihat status pembayaran apakah sudah lunas atau belum lunas. Apabila ada yang anda ingin tanyakan kepada
-                                admin, anda bisa menghubungi nomor yang tertera pada invoice tersebut.</p>
+                            <p class="body-description">Setelah mengisi form pemesanan anda diarahkan ke halaman info pemesanan, berikut penjelasan:
+                                <br>
+                                - Invoice: Klik detail, untuk melihat invoice / IPTM pemesanan anda, lanjut melakukan pembayaran sesuai harga yang tertera.  
+                                <br> 
+                                - Pembayaran: Klik upload bukti pembayaran, untuk mengunngah bukti pembayaran.
+                                <br>
+                                <br>
+                                Terakhir jika sudah melakukan langkah diatas, anda diminta untuk menunggu konfirmasi dari admin. Jika status pembayaran sudah lunas,
+                                selamat anda telah menyelesaikan pemesanan pemakaman secara online simpan dan tunjukan invoice atau IPTM kepada pihak TPU yang
+                                terkait ! 
+                            </p>
                             <a href="/auth/register" class="btn btn-register px-4 py-2 mr-2">
                                 Daftar Akun
                             </a>

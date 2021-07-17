@@ -8,7 +8,7 @@ body{
 //Navbar
 .navbar{
   .navbar-nav{
-      a{
+      .nav-link{
           font-family: 'Merriweather', serif;
           color: #92B74B;
           float: left;
@@ -32,13 +32,6 @@ body{
       }
   }
 }
-
-// ul li.active a{
-//     color: #92B74B;
-//     font-family: 'Merriweather', serif;
-//     font-weight: bolder;
-//     border-bottom: 3px solid #92B74B;
-// }
 
   .btn-secondary {
     color: #ffffff;

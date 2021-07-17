@@ -115,7 +115,7 @@ class Auth extends BaseController
                 
                 'errors' => [
                     'required'             => 'Nama Panjang wajib diisi',
-                    'is_unique'            => 'Nama Panjang Sudah Terdaftar'
+                    'is_unique'            => 'Nama Pengguna Sudah Terdaftar'
                 ]
             ],
             'phonenumber' => [
@@ -123,9 +123,9 @@ class Auth extends BaseController
 
                 'errors' => [
                     'required'              => 'Nomor Handhphone wajib diisi',
-                    'numeric' 		        => 'Nomor Handphone harus diisi dengan angka saja',
-                    'min_length'            => 'Nomor Handphone minimal terdiri dari 8 angka',
-                    'max_length'            => 'Nomor Handphone maksimal terdiri dari 20 angka',
+                    'numeric' 		        => 'Nomor Handphone Harus Diisi Dengan Angka Saja',
+                    'min_length'            => 'Nomor Handphone Minimal Terdiri Dari 8 Angka',
+                    'max_length'            => 'Nomor Handphone Maksimal Terdiri Dari 20 Angka',
                     'is_unique'             => 'Nomor Handphone Sudah Terdaftar'
 
                 ]
@@ -135,9 +135,9 @@ class Auth extends BaseController
 
                 'errors' => [
                     'required'              => 'Kata Sandi wajib diisi',
-                    'min_length'            => 'Kata Sandi minimal terdiri dari 8 karakter',
-                    'max_length'            => 'Kata Sandi maksimal terdiri dari 20 karakter',
-                    'matches'               => 'Harus sama dengan Konfirmasi Password'
+                    'min_length'            => 'Kata Sandi Minimal Terdiri Dari 8 Karakter',
+                    'max_length'            => 'Kata Sandi Maksimal Terdiri Dari 20 Karakter',
+                    'matches'               => 'Harus Sama Dengan Konfirmasi Kata Sandi'
                 ]
             ],
             'confirmpw' => [
@@ -145,9 +145,9 @@ class Auth extends BaseController
                 
                 'errors' => [
                     'required'              => 'Konfirmasi Kata Sandi wajib diisi',
-                    'min_length'            => 'Konfirmasi Kata Sandi minimal terdiri dari 8 karakter',
-                    'max_length'            => 'Konfirmasi Kata Sandi maksimal terdiri dari 20 karakter',
-                    'matches'               => 'Harus sesuai dengan Kata Sandi'
+                    'min_length'            => 'Konfirmasi Kata Sandi Minimal Terdiri Dari 8 Karakter',
+                    'max_length'            => 'Konfirmasi Kata Sandi Maksimal Terdiri Dari 20 Karakter',
+                    'matches'               => 'Harus Sama Dengan Kata Sandi'
                 ]
             ]
         ])){
