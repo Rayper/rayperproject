@@ -194,13 +194,11 @@
                             <h2 class="body-number">Langkah 4</h2>
                             <h2 class="body-heading">Mendapatkan Invoice Pemesanan / Izin Penggunaan Tanah Makam (IPTM)
                             </h2>
-                            <p class="body-description">Setelah mengisi form pemesanan kamu mendapatkan invoice atau
-                                IPTM, lanjut melakukan pembayaran
-                                sesuai harga yang tertera, jika status pembayaran sudah dibayar. Selamat anda telah
-                                meyelesaikan
-                                pemesanan pemakaman secara online simpan dan tunjukan invoice atau IPTM kepada pihak TPU
-                                yang
-                                terkait !</p>
+                            <p class="body-description">Setelah mengisi form pemesanan anda diarahkan ke halaman info pemesanan, 
+                                di info pemesanan tersebut anda diminta untuk mengunggah bukti pembayaran, setelah anda mengunggah bukti pembayaran anda diminta
+                                untuk menunggu konfirmasi dari admin. Untuk melihat invoice atau IPTM dari pemesanan anda, klik tombol detail pada kolom cek invoice. 
+                                Didalam invoice tersebut anda dapat melihat status pembayaran apakah sudah lunas atau belum lunas. Apabila ada yang anda ingin tanyakan kepada
+                                admin, anda bisa menghubungi nomor yang tertera pada invoice tersebut.</p>
                             <a href="/auth/register" class="btn btn-register px-4 py-2 mr-2">
                                 Daftar Akun
                             </a>
