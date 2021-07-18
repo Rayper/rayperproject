@@ -65,6 +65,7 @@ h1 {
 .btn-secondary {
   background-color: #92B74B;
   color: #ffffff;
+  border-style: none;
 }
 
 .btn-secondary:hover {
@@ -102,6 +103,10 @@ h1 {
 .table-info-pemesanan .btn-detail:hover {
   color: #ffffff;
   background-color: #FF7272;
+}
+
+.table-info-pemesanan .btn-success {
+  font-family: 'Merriweather', serif;
 }
 
 .section-footer {

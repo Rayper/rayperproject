@@ -53,6 +53,7 @@ body{
   .btn-secondary {
     color: #fff;
     background-color: #92B74B;
+    border-style: none;
 
     &:hover{
         background-color: #9FD438;
@@ -76,25 +77,41 @@ body{
 }
 
 //Main
-.table-invoice-admin{
-  thead{
-    th{
-        background-color: #92B74B;
-        font-family: 'Merriweather', serif;
-        color: #ffffff;
+.section-form-news{
+  .card{
+      margin-top: 30px;
+      background: #ffffff;
+      margin-bottom: 10px;
+      -moz-box-shadow: 0 0 3px #ccc;
+      -webkit-box-shadow: 0 0 3px #ccc;
+      box-shadow: 0 0 3px #ccc;
+  }
+
+  h1{
+      color: #92B74B;
+      font-weight: 600;
+      font-size: 30px;
+      font-family: 'Merriweather', serif;
+  }
+
+  .form-group{
+      margin-left: 10px;
+      label{
+        color: #000000;
+      }
     }
-  }
 
-  button{
-    color: #ffffff;
-        background-color: #FF0000;
-        font-family: 'Merriweather', serif;
+    .btn-upload{
+      background: #92B74B;
+      color: #ffffff;
+      font-family: 'Merriweather', serif;
 
-        &:hover{
-            color: #ffffff;
-            background-color: #FF7272;
-        }
-  }
+      &:hover{
+        color: #ffffff;
+        background: #9FD438;
+      }
+
+    }
 }
 
 //Footer

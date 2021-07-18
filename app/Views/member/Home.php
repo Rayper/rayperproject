@@ -271,6 +271,7 @@
         integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous">
     </script>
     <script src="/js/sweetalert2.all.js"></script>
+    <script src="<?= base_url('/js/retina.min.js'); ?>"></script>
 
 </body>
 

@@ -108,8 +108,6 @@
                                 </table>
                                 <br>
                                 <p>Lakukan Pembayaran ke Nomor Rekening <b>527129846 (BCA An. KOBER)</b></p>
-                                <p>Untuk mengkonfirmasi pembayaran dapat menghubungi admin (085719644122 a.n admin
-                                    kober)</b></p>
                             </div>
                         </div>
                     </section>
@@ -125,7 +123,7 @@
                                             <td class="number">Rp. <?= $dt['Harga'] ?></td>
                                         </tr>
                                         <tr>
-                                            <td>Pajak (2%)</td>
+                                            <td>Pajak</td>
                                             <td>:</td>
                                             <td class="number">Rp. 2000</td>
                                         </tr>
@@ -163,10 +161,10 @@
                                 <ul class="list-unstyled">
                                     <li>Tunjukan Invoice ini kepada pihak TPU yang tertera
                                         diatas untuk melanjutkan prosesi pemakaman, jika
-                                        status belum berubah bisa hubungi pihak kami:
+                                        status belum berubah atau ada penolakan bisa hubungi pihak kami:
                                         <br>
                                         <br>
-                                        kober@gmail.com / 14045
+                                        support@koberapps.online / 085719644122
                                     </li>
                                 </ul>
                             </div>

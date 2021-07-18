@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Upload Berita</title>
+    <title>Unggah Berita</title>
     <link rel="shortcut icon" href="/img/Favicon.ico">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
@@ -42,14 +42,14 @@
                         <div class="form-group row">
                             <label for="inputJudulBerita" class="col-sm-2 col-lg-2 form-label">Judul Berita</label>
                             <input type="text" class="form-control form-control-sm col-lg-5 col-sm-5" name="Judul"
-                                id="judulBerita">
+                                id="judulBerita" required>
                         </div>
 
                         <div class="form-group row">
                             <label for="inputTanggalUpload" class="col-2 col-lg-2 form-label">Tanggal Upload</label>
                             <?php date_default_timezone_set('Asia/Jakarta'); $date = date('d/m/Y H:i', time());?>
                             <input type="text" class="form-control form-control-sm col-lg-5 col-sm-5"
-                                name="tanggalupload" value="<?= $date ?>">
+                                name="tanggalupload" value="<?= $date ?>" required>
                         </div>
 
                         <div class="form-group row">
@@ -61,7 +61,7 @@
 
                         <div class="form-group row">
                             <label for="inputIsiBerita" class="col-sm-2 col-lg-2 form-label">Isi Berita</label>
-                            <textarea class="form-control col-lg-9 col-sm-9" rows="15" id="Isi" name="Isi"></textarea>
+                            <textarea class="form-control col-lg-9 col-sm-9" rows="15" id="Isi" name="Isi" required></textarea>
                         </div>
 
                         <div class="form-group row">

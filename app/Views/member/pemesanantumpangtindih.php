@@ -230,9 +230,7 @@
                         </div>
 
                         <div class="form-group row">
-                            <div class="col-sm-10">
-                                <button class="btn btn-secondary" type="submit" onClick="return sukses()">Pesan</button>
-                            </div>
+                            <button class="btn btn-secondary d-grid gap-2 col-lg-1 col-sm-2 mx-auto" type="submit">Pesan</button>
                         </div>
                     </form>
                 </div>

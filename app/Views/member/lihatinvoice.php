@@ -56,11 +56,11 @@
                     <table class="table table-hover my-5">
                         <thead>
                             <tr>
-                                <th scope="col">Id Invoice</th>
-                                <th scope="col">Tanggal pemesanan</th>
-                                <th scope="col">Status Pembayaran</th>
-                                <th scope="col">Cek Pembayaran</th>
-                                <th scope="col">Cek Invoice</th>
+                                <th scope="col">Id</th>
+                                <th scope="col">Tanggal Pemesanan</th>
+                                <th scope="col">Status</th>
+                                <th scope="col">Pembayaran</th>
+                                <th scope="col">Invoice</th>
                             </tr>
                             </thead>
                             <tbody>                           

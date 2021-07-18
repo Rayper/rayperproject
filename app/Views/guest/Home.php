@@ -27,9 +27,9 @@
     <!-- Header -->
     <header class="text-center">
         <h1>
-            Pemesanan Makam dengan mudah
+            Pesan Makam Dengan Mudah
             <br>
-            Secara Online
+            Hanya Sekali Klik
         </h1>
         <p class="mt-3">
             Temukan TPU yang tersedia, bagaimana prosedur
@@ -235,6 +235,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
         integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous">
     </script>
+    <script src="<?= base_url('/js/retina.min.js'); ?>"></script>
 </body>
 
 </html>
