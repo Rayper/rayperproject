@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cari Nama</title>
+    <title>Info Pemesanan</title>
     <link rel="shortcut icon" href="/img/Favicon.ico">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
@@ -53,11 +53,11 @@
                     <table class="table table-hover my-5">
                         <thead>
                             <tr>
-                                <th scope="col">Id Invoice</th>
-                                <th scope="col">Tanggal pemesanan</th>
-                                <th scope="col">Status Pembayaran</th>
-                                <th scope="col">Cek Pembayaran</th>
-                                <th scope="col">Cek Invoice</th>
+                                <th scope="col">Id</th>
+                                <th scope="col">Tanggal Pemesanan</th>
+                                <th scope="col">Status</th>
+                                <th scope="col">Pembayaran</th>
+                                <th scope="col">Invoice</th>
                             </tr>
                             </thead>
                             <tbody>                           

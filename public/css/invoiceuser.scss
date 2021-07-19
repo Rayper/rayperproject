@@ -75,6 +75,7 @@ header{
 .btn-secondary {
     background-color: #92B74B;
     color: #ffffff;
+    border-style: none;
   
     &:hover {
       background-color: #9FD438;
@@ -118,6 +119,10 @@ header{
             color: #ffffff;
             background-color: #FF7272;
         }
+    }
+
+    .btn-success{
+        font-family: 'Merriweather', serif;
     }
     
 }

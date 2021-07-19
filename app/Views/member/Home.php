@@ -181,11 +181,11 @@
                                 setelah itu klik pesan untuk melanjutkan ke prosedur selanjutnya.</p>
                             <p class="body-disclaimer">* Terdapat 3 metode untuk pemakaman:
                                 <br>
-                                1. Lahan Makam Baru
+                                1. Makam Baru
                                 <br>
-                                2. Tumpang Tindih
+                                2. Makam Covid
                                 <br>
-                                3. Covid-19</p>
+                                3. Tumpang Tindih</p>
                         </div>
                     </li>
 
@@ -216,13 +216,18 @@
                             <h2 class="body-number">Langkah 4</h2>
                             <h2 class="body-heading">Mendapatkan Invoice Pemesanan / Izin Penggunaan Tanah Makam (IPTM)
                             </h2>
-                            <p class="body-description">Setelah mengisi form pemesanan kamu mendapatkan invoice atau
-                                IPTM, lanjut melakukan pembayaran
-                                sesuai harga yang tertera, jika status pembayaran sudah dibayar. Selamat anda telah
-                                meyelesaikan
-                                pemesanan pemakaman secara online simpan dan tunjukan invoice atau IPTM kepada pihak TPU
-                                yang
-                                terkait !</p>
+                            <p class="body-description">Setelah mengisi form pemesanan anda diarahkan ke halaman info pemesanan, berikut penjelasan:
+                                <br>
+                                - Invoice: Klik detail, untuk melihat invoice / IPTM pemesanan anda, lanjut melakukan pembayaran sesuai harga yang tertera.  
+                                <br> 
+                                - Pembayaran: Klik upload bukti pembayaran, untuk mengunggah bukti pembayaran.
+                                <br>
+                                <br>
+                                Terakhir jika sudah melakukan langkah diatas, anda diminta untuk menunggu konfirmasi dari admin. Jika status pembayaran sudah lunas,
+                                selamat anda telah menyelesaikan pemesanan pemakaman secara online simpan dan tunjukan invoice atau IPTM kepada pihak TPU yang
+                                terkait !
+                            </p>
+                            <p class="body-disclaimer">* Jika ada kendala pada saat pemesanan maupun pembayaran segera hubungi kami!</p>
                             <a href="/Member/faq" class="btn btn-faq px-4 py-2">
                                 Lihat FAQ
                             </a>
@@ -263,6 +268,7 @@
         integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous">
     </script>
     <script src="/js/sweetalert2.all.js"></script>
+    <script src="<?= base_url('/js/retina.min.js'); ?>"></script>
 
 </body>
 

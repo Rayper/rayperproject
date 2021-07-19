@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cek Pembayaran</title>
+    <title>Upload Bukti Pembayaran</title>
     <link rel="shortcut icon" href="/img/Favicon.ico">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
@@ -45,12 +45,6 @@
         </div>
     </form>
 
-    <!-- Header -->
-    <header class="text-left">
-        <h1>Cek Pembayaran</h1>
-    </header>
-    <br>
-
     <!-- Main -->
     <main>
         <section class="cek-pembayaran">
@@ -63,11 +57,10 @@
                     enctype="multipart/form-data">
                     <div class="card-body">
                         <blockquote class="blockquote mb-0">
-                            <p class="judul">Silahkan Upload Bukti Pembayaran dengan pembayaran ke Nomor Rekening
-                                527129846 (BCA An. KOBER)</p>
+                            <p class="judul">Silahkan Upload Bukti Pembayaran dengan pembayaran ke Nomor Rekening <b>527129846 (BCA An. KOBER)</b></p>
                             <div class="form-group row">
                                 <input type="hidden" name="invoice_id" value="<?= $dt['invoice_id']; ?>">
-                                <input type="file" class="form-control-file col-sm-6" name="buktipembayaran"
+                                <input type="file" class="form-control-file form-control-sm col-sm-6 ml-2" name="buktipembayaran"
                                     accept=".pdf, .jpg, .png, .jpeg" required>
                             </div>
                             <div class="form-group row">

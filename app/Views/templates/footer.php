@@ -1,4 +1,4 @@
-<footer class="section-footer mt-5 mb-6">
+<footer class="section-footer mb-6">
     <div class="container pt-5 pb-5">
         <div class="row">
             <div class="col-lg-9">
@@ -6,7 +6,7 @@
                 <ul class="list-unstyled">
                     <li>Alamat: Jl. Aipda Ks. Tubun No.1, Kel.Pertamburan, Kec. Tanah Abang, Kota Jakarta Pusat.</li>
                     <li>Nomor: 085719644122</li>
-                    <li>Email : support@kober.id</li>
+                    <li>Email : support@koberapps.online</li>
                 </ul>
             </div>
             <div class="col-lg-3">

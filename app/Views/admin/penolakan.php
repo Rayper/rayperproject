@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cek Pembayaran</title>
+    <title>Tolak Pemesanan</title>
     <link rel="shortcut icon" href="/img/Favicon.ico">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
@@ -45,18 +45,12 @@
         </div>
     </form>
 
-    <!-- Header -->
-    <header class="text-left">
-        <h1>Tolak Pembayaran</h1>
-    </header>
-    <br>
-
     <!-- Main -->
     <main>
         <section class="cek-pembayaran">
             <div class="card">
                 <div class="card-header">
-                    Tolak Pembayaran
+                    Tolak Pemesanan
                 </div>
                 <?php foreach ($datainvoice as $dt) : ?>
                 <form method="post" action="<?= site_url('Admin/ubahstatus/'.$dt['invoice_id']) ?>"

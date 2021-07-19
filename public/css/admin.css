@@ -41,6 +41,7 @@ body {
 .btn-secondary {
   color: #fff;
   background-color: #92B74B;
+  border-style: none;
 }
 
 .btn-secondary:hover {

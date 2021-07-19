@@ -79,6 +79,7 @@ a.buttonback {
 .btn-secondary {
   background-color: #92B74B;
   color: #ffffff;
+  border-style: none;
 }
 
 .btn-secondary:hover {

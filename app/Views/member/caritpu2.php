@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cari TPU Makam Covid</title>
+    <title>Cari TPU Tumpang Tindih</title>
     <link rel="shortcut icon" href="/img/Favicon.ico">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
@@ -75,10 +75,10 @@
                                 <a href="/Member/caritpu2" class="dropdown-item">TPU Tumpang Tindih</a>
                             </div>
                         </div>
-                        <div class="col-lg-sm-2 mt-2">
+                        <div class="col-lg-3 mt-2">
                             <input class="form-control mr-5" type="search" placeholder="Nama TPU/Unit" name="keyword">
                         </div>
-                        <div class="col-lg-sm-2 mt-2">
+                        <div class="col-lg-3 mt-2 ml-2">
                             <button type="submit" name="submit" class="btn btn-search">Cari</button>
                         </div>
                     </div>

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cek Pembayaran</title>
+    <title>Info Penolakan</title>
     <link rel="shortcut icon" href="/img/Favicon.ico">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
@@ -45,11 +45,6 @@
         </div>
     </form>
 
-    <!-- Header -->
-    <header class="text-left">
-        <h1>Penjelasan Penolakan Pemesanan</h1>
-    </header>
-    <br>
 
     <!-- Main -->
     <main>
@@ -59,13 +54,13 @@
                     Penjelasan Penolakan Pemesanan
                 </div>
                 <div class="card-body">
-                    <p class="judul">Pembayaran ditolak dikarenakan hal-hal sebagai berikut :</p>
+                    <p class="judul">Pemesanan Ditolak Dikarenakan Hal-Hal Sebagai Berikut :</p>
                     <br>
                     <p class="judul">1.Dokumen yang diupload ada yang tidak sesuai</p>
                     <p class="judul">2.Jumlah nominal yang dibayarkan tidak sesuai dengan yang seharusnya</p>
                     <br>
                     <p class="judul">Silahkan Melakukan Pemesanan Ulang</p>
-                    <a href="/member/home" class="buttonback">Kembali ke halaman utama</a>
+                    <a href="/member/home" class="buttonback"> << Kembali ke Beranda</a>
                 </div>
             </div>
         </section>
