@@ -24,7 +24,7 @@ class Admin extends BaseController
 
     public function Home()
     {
-        return view('admin/home');
+        return view('admin/Home');
     }
 
     public function uploadberita()
