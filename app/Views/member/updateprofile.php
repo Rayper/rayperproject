@@ -113,8 +113,11 @@
                         <div class="form-row justify-content-center">
                             <div class="col-lg-8">
                                 <button type="submit" class="btn btn-register mx-3 my-2">Ubah</button>
+                                <a href="/member/Home" class="mx-3"><< Kembali Ke Beranda</a>
                             </div>
                         </div>
+
+                        
                 </div>
                 </form>
             </div>
