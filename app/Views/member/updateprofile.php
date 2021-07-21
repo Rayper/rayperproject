@@ -28,9 +28,6 @@
                     <form method="post" action="<?= site_url('Member/updateprofile') ?>" class="needs-validation"
                         novalidate>
                         <?= csrf_field();?>
-                        <div class="col-sm-10">
-                                <h1>Tekan logo kober untuk!</h1>
-                        </div>
                         <div class="form-row justify-content-center">
                             <div class="col-lg-8">
                                 <a href="/member/Home">
@@ -119,8 +116,6 @@
                                 <a href="/member/Home" class="mx-3"><< Kembali Ke Beranda</a>
                             </div>
                         </div>
-
-                        
                 </div>
                 </form>
             </div>
