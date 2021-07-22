@@ -97,7 +97,7 @@
                 <div class="row section-feature-kober justify-content-center">
                     <div class="col-sm-5 col-md-4 col-lg-3 mx-3">
                         <div class="card h-100" style="width: 18rem;">
-                            <a href="/Member/caritpu" class="btn btn-feature">
+                            <a href="/Member/caritpuall" class="btn btn-feature">
                                 <img src="/img/Cari TPU.png" alt="Icon Cari TPU" class="card-img-top">
                                 <div class="card-body">
                                     <h2 class="card-title">Cari TPU</h2>
