@@ -33,10 +33,10 @@
                         <nav>
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item">
-                                    <a href="/member/caritpu" style="color: #EEF3EF;">Cari TPU</a>
+                                    <a href="/member/lihatinvoice" style="color: #EEF3EF;">Info Pemesanan</a>
                                 </li>
                                 <li class="breadcrumb-item">
-                                    <a style="color: #EEF3EF;">Form Pemesanan</a>
+                                    <a style="color: #EEF3EF;">Detail invoice</a>
                                 </li>
                                 <li class="breadcrumb-item active">
                                     Invoice Pemesanan
