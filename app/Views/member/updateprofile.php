@@ -46,7 +46,7 @@
                             <div class="col-lg-8">
                                 <input type="text" name="fullname" placeholder="Nama Pengguna"
                                     class="form-control mx-3 mb-1<?= ($validation->hasError('fullname')) ? 'is-invalid' : '' ; ?>"
-                                    value="<?= session()->get('fullname'); ?>" readonly>
+                                    value="<?= session()->get('fullname'); ?>" required>
                             </div>
                         </div>
 
@@ -54,7 +54,7 @@
                             <div class="col-lg-8">
                                 <input type="email" name="email" placeholder="Email" class="form-control mx-3 mb-1"
                                     <?= ($validation->hasError('email')) ? 'is-invalid' : '' ; ?>"
-                                    value="<?= old('email'); ?>" required>
+                                    value="<?= session()->get('email'); ?>" readonly>
                                 <div class="invalid-feedback mx-3">
                                     Masukan Email
                                 </div>
@@ -69,7 +69,7 @@
                             <div class="col-lg-8">
                                 <input type="text" name="phonenumber" placeholder="Nomor Handphone"
                                     class="form-control mx-3 mb-1<?= ($validation->hasError('phonenumber')) ? 'is-invalid' : '' ; ?> "
-                                    value="<?= old('phonenumber'); ?>" required>
+                                    value="<?= session()->get('phonenumber'); ?>" required>
                                 <div class="invalid-feedback mx-3">
                                     Masukan Nomor Handphone
                                 </div>

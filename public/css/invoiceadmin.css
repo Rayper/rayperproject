@@ -55,6 +55,24 @@ body {
   background-color: #9FD438;
 }
 
+.section-header-invoice .container .row .custom-select {
+  max-width: 150px;
+  margin-top: 40px;
+  margin-left: 20px;
+}
+
+.section-header-invoice .container .row .form-control {
+  max-width: 250px;
+  margin-top: 40px;
+  margin-left: 15px;
+}
+
+.section-header-invoice .container .row .btn-search {
+  margin-top: 40px;
+  color: #ffffff;
+  background-color: #92B74B;
+}
+
 .table-invoice-admin thead th {
   background-color: #92B74B;
   font-family: 'Merriweather', serif;

@@ -54,6 +54,16 @@ class Admin extends BaseController
     
     public function invoice()
     {
+        $keyword = $this->request->getVar('keyword');
+
+        if($keyword)
+        {
+            $nama = $this->m_pemesanan->search($keyword);
+        }
+        else{
+            $nama = $this->m_pemesanan;
+        }
+
         $paginate = 6;
         $data['datainvoice']   = $this->m_pemesanan->join('status_pembayaran ', 'form_pemesanan.status = status_pembayaran.status')->join('blok_tpu ', 'form_pemesanan.BlokTPU = blok_tpu.Blok_id')->orderBy('form_pemesanan.invoice_id', 'asc')->paginate($paginate, 'datainvoice');
         $data['pager']         = $this->m_pemesanan->pager;

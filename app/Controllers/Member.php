@@ -158,16 +158,6 @@ class Member extends BaseController
     public function updateprofile(){
 
         if(!$this->validate([
-            'email' => [
-                'rules' => 'required|valid_email|is_unique[user.email]',
-
-                'errors' => [
-                    'required'              => 'Email wajib diisi',
-                    'valid_email'           => 'Email tidak valid',
-                    'is_unique'             => 'Email Sudah Terdaftar'
-                ]
-            ],
-
             'phonenumber' => [
                 'rules' => 'required|numeric|min_length[8]|max_length[20]|is_unique[user.phonenumber]',
 
@@ -206,10 +196,10 @@ class Member extends BaseController
 		return redirect()->to('updateprofilepage')->withInput()->with('validation', $validation);
         }
 
-        $param = $this->request->getVar('fullname');
+        $param = $this->request->getVar('email');
 
         $data = [
-            'email'       => $this->request->getPost('email'),
+            'fullname'    => $this->request->getPost('fullname'),
             'phonenumber' => $this->request->getPost('phonenumber'),
             'password'    => password_hash($this->request->getPost('password'), PASSWORD_BCRYPT),
             'confirmpw'   => password_hash($this->request->getPost('confirmpw'), PASSWORD_BCRYPT)
@@ -217,7 +207,8 @@ class Member extends BaseController
 
          $this->m_user->editProfile($data, $param);
 
-		return redirect()->to('/member/home');
+         session()->destroy();
+         return redirect()->to('/auth/login');
     }
     
     public function getinvoice()

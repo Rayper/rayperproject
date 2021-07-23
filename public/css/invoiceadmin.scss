@@ -69,6 +69,28 @@ body {
 }
 
 //Main
+.section-header-invoice{
+  .container{
+      .row{
+          .custom-select{
+              max-width: 150px;
+              margin-top: 40px;
+              margin-left: 20px;
+          }
+          .form-control{
+              max-width: 250px;
+              margin-top: 40px;
+              margin-left: 15px;
+          }
+          .btn-search{
+              margin-top: 40px;
+              color: #ffffff;
+              background-color: #92B74B;
+          }
+      }
+  }
+}
+
 .table-invoice-admin {
   thead {
     th {

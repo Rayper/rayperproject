@@ -85,8 +85,24 @@
                 <p class="my-3"><?= $detailberita['Isi']; ?></p>
                 <br>
                 <a href="/member/liatberita">
-                    << Kembali ke Halaman Berita</a> </div> </section> </main> <!-- Footer -->
-                        <?= $this->include('templates/footer'); ?>
+                    << Kembali ke Halaman Berita</a> </div> 
+        </section> </main> 
+        
+        <!-- Footer -->
+        <?= $this->include('templates/footer'); ?>
+
+        <script>
+        function sukses() {
+            Swal.fire({
+                icon: 'success',
+                title: 'Berhasil',
+                text: 'Berhasil mengirimkan Feedback!',
+                confirmButtonColor: '#92b74b',
+                showConfirmButton: true,
+                timer: 2000;
+            });
+        }
+        </script>
 
 
 

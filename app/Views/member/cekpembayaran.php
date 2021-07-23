@@ -65,7 +65,7 @@
                             </div>
                             <div class="form-group row">
                                 <div class="col-sm-10">
-                                    <button class="btn btn-secondary" type="submit">Upload</button>
+                                    <button class="btn btn-secondary" type="submit" onClick="return suksesupload()">Upload</button>
                                 </div>
                             </div>
                     </div>
@@ -84,6 +84,16 @@
                 icon: 'success',
                 title: 'Berhasil',
                 text: 'Berhasil mengirimkan Feedback!',
+                confirmButtonColor: '#92b74b',
+                showConfirmButton: true,
+            });
+        }
+
+        function suksesupload() {
+            Swal.fire({
+                icon: 'success',
+                title: 'Berhasil',
+                text: 'Berhasil Upload Bukti Pembayaran!',
                 confirmButtonColor: '#92b74b',
                 showConfirmButton: true,
             });

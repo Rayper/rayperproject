@@ -22,6 +22,21 @@
 
     <!-- Main -->
     <main>
+    <section class="section-header-invoice">
+            <form action="" method="get">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-sm-2">
+                            <input class="form-control mr-5" type="search" placeholder="Cari Nama Alm/Almh"
+                                name="keyword">
+                        </div>
+                        <div class="col-lg-sm-2">
+                            <button type="submit" name="submit" class="btn btn-search">Cari</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </section>
         <section class="table-invoice-admin">
             <div class="container">
                 <div class="table-responsive">

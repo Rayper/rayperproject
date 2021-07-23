@@ -16,7 +16,7 @@ class m_user extends Model
     public function editProfile($data, $param)
     {
         $builder = $this->db->table('user');
-        $builder->where('fullname', $param);
+        $builder->where('email', $param);
         return $builder->update($data);
     }
 
