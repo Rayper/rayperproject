@@ -20,6 +20,31 @@
     <!-- navbar -->
     <?= $this->include('templates/navbarUser'); ?>
 
+    <!-- Modal -->
+    <form action="<?= site_url('Member/feedback') ?>" method="post">
+        <div class="modal fade" id="feedbackModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Feedback Anda Sangat Berguna Untuk Kemajuan
+                            Website Kami</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <input type="hidden" name="user_id" value="<?= session()->get('user_id'); ?>">
+                        <textarea class="form-control" id="feedback" rows="5" name="feedback"
+                            placeholder="Isi Feedback"></textarea>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-success btn-send" onClick="return sukses()">Kirim</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    
     <!-- Main -->
     <main>
         <section class="section-detail-breadcrumb my-2">

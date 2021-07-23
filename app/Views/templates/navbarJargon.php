@@ -12,14 +12,5 @@
                 </span>
             </li>
         </ul>
-        <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown">
-                <?= session()->get('fullname'); ?>
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                <a href="/member/updateprofile"><button class="dropdown-item" type="button">Edit Profil</button></a>
-                <a href="/auth/logout"><button class="dropdown-item" type="button">Keluar</button></a>
-            </div>
-        </div>
     </nav>
 </div>
