@@ -15,13 +15,14 @@
         rel="stylesheet">
     <link rel="stylesheet" href="<?= base_url('/css/findtpu.css'); ?>">
 </head>
+
 <body>
     <!-- navbar -->
     <?= $this->include('templates/navbarUser'); ?>
-    
+
     <!-- Header -->
     <header class="text-left">
-            <h1>TPU Makam Baru</h1>
+        <h1>TPU Makam Baru</h1>
     </header>
     <br>
 
@@ -29,29 +30,31 @@
     <form action="<?= site_url('Member/feedback') ?>" method="post">
         <div class="modal fade" id="feedbackModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Feedback Anda Sangat Berguna Untuk Kemajuan Website Kami</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Feedback Anda Sangat Berguna Untuk Kemajuan
+                            Website Kami</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <input type="hidden" name="user_id" value="<?= session()->get('user_id'); ?>">
+                        <textarea class="form-control" id="feedback" rows="5" name="feedback"
+                            placeholder="Isi Feedback"></textarea>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-success btn-send" onClick="return sukses()">Kirim</button>
+                    </div>
                 </div>
-                <div class="modal-body">
-                    <input type="hidden" name="user_id" value="<?= session()->get('user_id'); ?>">
-                    <textarea class="form-control" id="feedback" rows="5" name="feedback" placeholder="Isi Feedback"></textarea>
-                </div>
-                <div class="modal-footer">
-                    <button type="submit" class="btn btn-success btn-send" onClick="return sukses()">Kirim</button>
-                </div>
-            </div>
             </div>
         </div>
     </form>
-    
+
     <!-- Main -->
     <main>
-    <section class="section-header-tpu" id="headerTPU">
-            <form action="" method = "get">
+        <section class="section-header-tpu" id="headerTPU">
+            <form action="" method="get">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-2 mt-5">
@@ -77,30 +80,36 @@
         </section>
         <br>
         <section class="section-card-tpu" id="cardTPU">
-                <div class="container">
-                    <div class="row section-card-kober">
+            <div class="container">
+                <div class="row section-card-kober">
+                <?php if(count($datatpus) > 0) : ?>
                         <?php foreach ($datatpus as $dt) : ?>
-                            <div class="col-sm-5 col-md-4 col-lg-3 my-3 mx-4">
-                                <div class="card text-center" style="width: 19rem;">
-                                    <img src="<?= base_url('img/'.$dt['Thumbnail']) ?>" alt="Image Card TPU" class="card-img-top">
-                                        <div class="card-body-exist">
-                                            <br>
-                                            <h4 class="card-title"><?= $dt['NamaTPU'] ?></h4>
-                                            <p class="text-center"><?= $dt['AlamatTPU'] ?></p>
-                                            <p class="text-center">Unit <?= $dt['Unit'] ?></p>
-                                            <p class="text-center">Kategori : <?= $dt['nama'] ?></p>
-                                            <p class="text-center">Hubungi   : <?= $dt['Contact'] ?></p>
-                                            <a href="<?= $dt['Link'] ?>" class="text-center" target="_blank">Link Lokasi</a><br>
-                                            <a href="/member/pemesananmakam/<?= $dt['tpu_id'] ?>" class="btn btn-full px-3 py-1 mt-3">Pesan</a>
-                                        </div>
+                        <div class="col-sm-5 col-md-4 col-lg-3 my-3 mx-4">
+                            <div class="card text-center" style="width: 19rem;">
+                                <img src="<?= base_url('img/'.$dt['Thumbnail']) ?>" alt="Image Card TPU"
+                                    class="card-img-top">
+                                <div class="card-body-exist">
+                                    <br>
+                                    <h4 class="card-title"><?= $dt['NamaTPU'] ?></h4>
+                                    <p class="text-center"><?= $dt['AlamatTPU'] ?></p>
+                                    <p class="text-center">Unit <?= $dt['Unit'] ?></p>
+                                    <p class="text-center">Kategori : <?= $dt['nama'] ?></p>
+                                    <p class="text-center">Hubungi : <?= $dt['Contact'] ?></p>
+                                    <a href="<?= $dt['Link'] ?>" class="text-center" target="_blank">Link Lokasi</a><br>
+                                    <a href="/member/pemesananmakam/<?= $dt['tpu_id'] ?>"
+                                        class="btn btn-full px-3 py-1 mt-3">Pesan</a>
                                 </div>
                             </div>
-                        <?php endforeach; ?>               
-                    </div>
+                        </div>
+                        <?php endforeach; ?>
+                        <?php else : ?>
+                    <p style="color:red; font-size: 40px;">Data tidak ditemukan</p>
+                <?php endif; ?>
                 </div>
-                <div class="pagination justify-content-center mt-4">
-                    <?php echo $pager->links('datatpu', 'bootstrap_pagination') ?>
-                </div>
+            </div>
+            <div class="pagination justify-content-center mt-4">
+                <?php echo $pager->links('datatpu', 'bootstrap_pagination') ?>
+            </div>
         </section>
     </main>
 
@@ -108,18 +117,17 @@
     <?= $this->include('templates/footer'); ?>
 
     <script>
-	function sukses()
-    {
-		Swal.fire({
-        icon: 'success',
-        title: 'Berhasil',
-        text:  'Berhasil mengirimkan Feedback!',
-        confirmButtonColor: '#92b74b',
-        showConfirmButton: true,
-    });
-	}
+        function sukses() {
+            Swal.fire({
+                icon: 'success',
+                title: 'Berhasil',
+                text: 'Berhasil mengirimkan Feedback!',
+                confirmButtonColor: '#92b74b',
+                showConfirmButton: true,
+            });
+        }
     </script>
-    
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
     </script>
@@ -131,4 +139,5 @@
     </script>
 
 </body>
+
 </html>

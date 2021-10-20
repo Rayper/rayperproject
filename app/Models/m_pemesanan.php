@@ -21,6 +21,7 @@ class m_pemesanan extends Model
         $builder->like('namaAlm', $keyword);
         $builder->orLike('KategoriTPU', $keyword);
         $builder->orLike('UnitTPU', $keyword);
+        $builder->orLike('NamaTPU', $keyword);
         return $builder;
     }
 

@@ -79,6 +79,7 @@
                             </tr>
                         </thead>
                         <tbody>
+                            <?php if(count($datainvoice) > 0) : ?>
                             <?php foreach ($datainvoice as $dt) : ?>
                             <tr>
                                 <td><?= $dt['namaAlm'] ?></td>
@@ -90,6 +91,11 @@
                                 <td><?= $dt['KategoriTPU'] ?></td>
                             </tr>
                             <?php endforeach; ?>
+                            <?php else : ?>
+                            <td colspan="7" style="color:red; text-align:center;">
+                                Data tidak ditemukan
+                            </td>
+                            <?php endif; ?>
                         </tbody>
                     </table>
                 </div>

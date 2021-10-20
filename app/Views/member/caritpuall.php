@@ -115,6 +115,7 @@
         <section class="section-card-tpu" id="cardTPU">
             <div class="container">
                 <div class="row section-card-kober">
+                <?php if(count($datatpus) > 0) : ?>
                     <?php foreach ($datatpus as $dt) : ?>
                     <div class="col-sm-5 col-md-4 col-lg-3 my-3 mx-4">
                         <div class="card text-center" style="width: 19rem;">
@@ -142,6 +143,9 @@
                         </div>
                     </div>
                     <?php endforeach; ?>
+                    <?php else : ?>
+                    <p style="color:red; font-size: 40px;">Data tidak ditemukan</p>
+                <?php endif; ?>
                 </div>
             </div>
             <div class="pagination justify-content-center mt-4">
