@@ -36,7 +36,7 @@
                                     <a href="/member/lihatinvoice" style="color: #EEF3EF;">Info Pemesanan</a>
                                 </li>
                                 <li class="breadcrumb-item active">
-                                    Invoice Pemesanan
+                                    Invoice
                                 </li>
                             </ol>
                         </nav>
