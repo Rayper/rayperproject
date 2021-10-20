@@ -89,7 +89,7 @@
                             <?php endforeach; ?>
                             <?php else : ?>
                             <td colspan="7" style="color:red; text-align:center;">
-                                Anda belum melakukan pemesanan!
+                                Anda belum melakukan pemesanan, Silahkan melakukan pemesanan
                             </td>
                             <?php endif; ?>
                         </tbody>
