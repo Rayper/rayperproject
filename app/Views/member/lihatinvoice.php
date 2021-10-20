@@ -59,13 +59,14 @@
                                 <th scope="col">Pembayaran</th>
                                 <th scope="col">Invoice</th>
                             </tr>
-                            </thead>
-                            <tbody>                           
+                        </thead>
+                        <tbody>
+                            <?php if(!empty($datainvoice)) : ?>
                             <?php foreach ($datainvoice as $dt) : ?>
                             <tr>
                                 <?php
-                                $id = 'KBR0';
-                                $invoice = $id . '' . $dt['invoice_id'] ?>
+                                        $id = 'KBR0';
+                                        $invoice = $id . '' . $dt['invoice_id'] ?>
                                 <td><?= $invoice ?></td>
                                 <td><?= $dt['tanggalpemesanan'] ?></td>
                                 <td><?= $dt['ket'] ?></td>
@@ -86,6 +87,11 @@
                                 </td>
                             </tr>
                             <?php endforeach; ?>
+                            <?php else : ?>
+                            <td colspan="7" style="color:red; text-align:center;">
+                                Anda belum melakukan pemesanan!
+                            </td>
+                            <?php endif; ?>
                         </tbody>
                     </table>
                 </div>

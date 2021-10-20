@@ -72,8 +72,6 @@
                                 <th scope="col">Nama Almarhum</th>
                                 <th scope="col">Tanggal Kematian</th>
                                 <th scope="col">Nama Ahli Waris</th>
-                                <th scope="col">Alamat Ahli Waris</th>
-                                <th scope="col">No. HP Ahli Waris</th>
                                 <th scope="col">Nama TPU</th>
                                 <th scope="col">Unit TPU</th>
                                 <th scope="col">Blok TPU</th>
@@ -86,8 +84,6 @@
                                 <td><?= $dt['namaAlm'] ?></td>
                                 <td><?= $dt['tanggalKematian'] ?></td>
                                 <td><?= $dt['namaAhliWaris'] ?></td>
-                                <td><?= $dt['alamatAhliWaris'] ?></td>
-                                <td><?= $dt['NoHPAhliWaris'] ?></td>
                                 <td><?= $dt['NamaTPU'] ?></td>
                                 <td><?= $dt['UnitTPU'] ?></td>
                                 <td><?= $dt['Tipe'] ?></td>

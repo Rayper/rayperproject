@@ -18,6 +18,11 @@ class Guest extends BaseController
         return view('guest/Home');
     }
 
+    public function test()
+    {
+        return view('guest/test');
+    }
+
     public function __construct()
     {
         $this->form_validation = \Config\Services::validation();

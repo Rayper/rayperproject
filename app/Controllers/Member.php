@@ -300,8 +300,6 @@ class Member extends BaseController
         $ktpsaksi->move('uploaded_data', $ktpsaksiname);
         $kksaksi->move('uploaded_data', $kksaksiname);
         
-         
-
 		$m_pemesanan->save([
             'user_id'           => $this->request->getVar('user_id'),
             'tpu_id'            => $this->request->getVar('tpu_id'),

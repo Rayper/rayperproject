@@ -90,7 +90,8 @@
                                         </div>
                                         <div class="col-md-6 custom">
                                             <a href="/admin/penolakan/<?= $dt['invoice_id'] ?>"
-                                                class="btn btn-danger ">Tolak</a></div>
+                                                class="btn btn-danger ">Tolak</a>
+                                        </div>
                                     </div>
                                 </td>
                 </div>

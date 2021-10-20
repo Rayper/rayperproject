@@ -67,6 +67,7 @@
                             <div class="form-group row">
                                 <div class="col-sm-10">
                                     <button class="btn btn-secondary" type="submit" onclick="sukses()">Ubah</button>
+                                    <button class="btn-download" type="submit"><a href="" class="text-center" target="_blank">Download Bukti Pembayaran</a><br></button>
                                 </div>
                             </div>
                     </div>

@@ -6,8 +6,25 @@ body {
 }
 
 header {
+  font-size: medium;
   padding: 40px 409px 40px 40px;
   background-color: #92B74B;
+  color: #ffffff;
+}
+
+.btn-download {
+  background-color: darkgreen;
+  color: #ffffff;
+  border-radius: 4px;
+}
+
+a {
+  font-size: medium;
+  color: #fff;
+}
+
+a:hover {
+  background-color: #9FD438;
   color: #ffffff;
 }
 

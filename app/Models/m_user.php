@@ -19,9 +19,4 @@ class m_user extends Model
         $builder->where('email', $param);
         return $builder->update($data);
     }
-
-    
-
-    
-
 }

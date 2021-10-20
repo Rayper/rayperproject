@@ -73,7 +73,6 @@
                                         <p class="text-left mb-0"><?= $dt['tanggalupload'] ?></p>
                                     </div>
                                 </div>
-
                                 <!-- Class Berita -->
                                 <img src="<?= base_url('Thumbnail_berita/'.$dt['Thumbnail']) ?>" alt="Icon Cari Nama"
                                     class="card-img-top">

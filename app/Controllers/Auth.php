@@ -15,6 +15,11 @@ class Auth extends BaseController
     {
         $session = session();
     }
+
+    public function test()
+    {
+        return view('test');
+    }
  
     public function register()
     {
@@ -38,7 +43,6 @@ class Auth extends BaseController
 
     public function cekpassword()
     {
-
         if(!$this->validate([
             'email' => [
                 'rules' => 'required|valid_email',
